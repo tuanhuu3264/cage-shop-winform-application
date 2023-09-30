@@ -1,0 +1,23 @@
+D:\dotnet\Cage_Shop\Cage_Shop\bin\Debug\Cage_Shop.exe.config
+D:\dotnet\Cage_Shop\Cage_Shop\bin\Debug\Cage_Shop.exe
+D:\dotnet\Cage_Shop\Cage_Shop\bin\Debug\Cage_Shop.pdb
+D:\dotnet\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.csproj.AssemblyReference.cache
+D:\dotnet\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.Form1.resources
+D:\dotnet\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.Properties.Resources.resources
+D:\dotnet\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.csproj.GenerateResource.cache
+D:\dotnet\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.csproj.CoreCompileInputs.cache
+D:\dotnet\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.exe
+D:\dotnet\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.pdb
+D:\dotnet\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.Staff_management.resources
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\bin\Debug\Cage_Shop.exe.config
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\bin\Debug\Cage_Shop.exe
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\bin\Debug\Cage_Shop.pdb
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.csproj.AssemblyReference.cache
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.Form1.resources
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.Manager.resources
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.Properties.Resources.resources
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.Staff_management.resources
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.csproj.GenerateResource.cache
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.csproj.CoreCompileInputs.cache
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.exe
+C:\Users\BIN\Desktop\New folder (3)\Cage_Shop\Cage_Shop\obj\Debug\Cage_Shop.pdb

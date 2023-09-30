@@ -2,71 +2,64 @@ create database CAGE_SHOP;
 go
 use CAGE_SHOP;
 go
-create table Material(
-    id varchar(6) primary key, 
-    name varchar(100) 
+CREATE TABLE Material(
+    id NVARCHAR(6) PRIMARY KEY,
+    name NVARCHAR(100)
 );
-go
-create table Product(
-    id varchar(6) primary key, 
-    name varchar(100), 
-	type varchar(15),
-	price money, 
-	quantity int,
-	description varchar(max),
-	idMaterial varchar(6) foreign key references Material(id)
+
+CREATE TABLE Product(
+    id NVARCHAR(6) PRIMARY KEY,
+    name NVARCHAR(100),
+    type NVARCHAR(15),
+    imageUrl NVARCHAR(MAX),
+    price_import MONEY,
+    price MONEY,
+    quantity INT,
+    description NVARCHAR(MAX),
+    idMaterial NVARCHAR(6) REFERENCES Material(id)
 );
-go
-create table Account(
-    id varchar(6) primary key,
-	email varchar(max),
-	role varchar(10),
-    phonenumber varchar(11), 
-    name varchar(100), 
-    address varchar(max), 
-	gender varchar(6), 
-	dateCreate date, 
-	salary money, 
-	dateBirth date
+CREATE TABLE Customer(
+    id NVARCHAR(6) NOT NULL PRIMARY KEY CLUSTERED,
+    name NVARCHAR(50) NOT NULL,
+    address NVARCHAR(50) NOT NULL,
+    phone NVARCHAR(50) NOT NULL,
+    createAt DATE
 );
-go
-create table Orders(
-    id varchar(6) primary key, 
-    dateBuy date, 
-    total money, 
-	receiver varchar(max),
-	address varchar(max),
-    phonenumber varchar(11),
-	idCustomer varchar(6) foreign key references Account(id),
-    idStaff varchar(6) foreign key references Account(id)
+CREATE TABLE Staff(
+    id NVARCHAR(6) PRIMARY KEY,
+    email NVARCHAR(MAX),
+    role NVARCHAR(10),
+    imageUrl NVARCHAR(MAX),
+    phone NVARCHAR(11),
+    name NVARCHAR(100),
+    address NVARCHAR(MAX),
+    gender NVARCHAR(6),
+    dateWork DATE,
+    salary MONEY,
+    dateBirth DATE
 );
-go
-create table Order_Product(
-    idProduct varchar(6) foreign key references Product(id), 
-	idOrder varchar(6) foreign key references Orders(id),
-    quantity int, 
-    price money 
+
+CREATE TABLE Orders(
+    id NVARCHAR(6) PRIMARY KEY,
+    dateBuy DATE,
+    total MONEY,
+    receiver NVARCHAR(MAX),
+    address NVARCHAR(MAX),
+    phonenumber NVARCHAR(11),
+    idCustomer NVARCHAR(6) REFERENCES Customer(id),
+    idStaff NVARCHAR(6) REFERENCES Staff(id)
 );
-go 
-create table Image_Product(
- idProduct varchar(6) foreign key references Product(id), 
- imageUrls varchar(max)
+
+CREATE TABLE Order_Product(
+    idProduct NVARCHAR(6) REFERENCES Product(id),
+    idOrder NVARCHAR(6) REFERENCES Orders(id),
+    quantity INT,
+    price MONEY
 );
-go 
-create table Image_Staff(
- idStaff varchar(6) foreign key references Account(id), 
- imageUrls varchar(max)
-);
-go 
-create table Voucher(
- id varchar(6) primary key, 
- content varchar(max), 
- value int, 
- dateStart date, 
- dateEnd date
-);
-go 
-create table Product_Voucher(
- idProduct varchar(6) foreign key references Product(id),
- idVoucher varchar(6) foreign key references Voucher(id)
+
+CREATE TABLE Report(
+    id NVARCHAR(6) PRIMARY KEY,
+    content NVARCHAR(MAX),
+    title NVARCHAR(100),
+    idStaff NVARCHAR(6) REFERENCES Staff(id)
 );

@@ -1,0 +1,15 @@
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\bin\Debug\net6.0\HRMDAO.deps.json
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\bin\Debug\net6.0\HRMDAO.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\bin\Debug\net6.0\HRMDAO.pdb
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\bin\Debug\net6.0\BusinessObject.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\bin\Debug\net6.0\BusinessObject.pdb
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\HRMDAO.csproj.AssemblyReference.cache
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\HRMDAO.GeneratedMSBuildEditorConfig.editorconfig
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\HRMDAO.AssemblyInfoInputs.cache
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\HRMDAO.AssemblyInfo.cs
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\HRMDAO.csproj.CoreCompileInputs.cache
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\HRMDAO.csproj.CopyComplete
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\HRMDAO.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\refint\HRMDAO.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\HRMDAO.pdb
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMDAO\obj\Debug\net6.0\ref\HRMDAO.dll

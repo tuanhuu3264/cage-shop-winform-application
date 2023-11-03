@@ -1,0 +1,17 @@
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\bin\Debug\net6.0\HRMRepositories.deps.json
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\bin\Debug\net6.0\HRMRepositories.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\bin\Debug\net6.0\HRMRepositories.pdb
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\bin\Debug\net6.0\BusinessObject.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\bin\Debug\net6.0\HRMDAO.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\bin\Debug\net6.0\BusinessObject.pdb
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\bin\Debug\net6.0\HRMDAO.pdb
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\HRMRepositories.csproj.AssemblyReference.cache
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\HRMRepositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\HRMRepositories.AssemblyInfoInputs.cache
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\HRMRepositories.AssemblyInfo.cs
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\HRMRepositories.csproj.CoreCompileInputs.cache
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\HRMRepositories.csproj.CopyComplete
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\HRMRepositories.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\refint\HRMRepositories.dll
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\HRMRepositories.pdb
+D:\LAB_PRN211\Quan_Ly_Long_Chim\HRMRepositories\obj\Debug\net6.0\ref\HRMRepositories.dll

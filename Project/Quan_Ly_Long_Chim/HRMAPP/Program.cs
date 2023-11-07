@@ -1,3 +1,5 @@
+using BirdManageShop;
+
 namespace HRMAPP
 {
     internal static class Program

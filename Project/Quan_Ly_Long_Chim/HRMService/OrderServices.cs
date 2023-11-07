@@ -23,6 +23,42 @@ namespace HRMService
         {
             orderRepositories.deleteOrder(id);
         }
+
+        public int GetNumberOrderByDay(int day, int month, int year)
+        {
+            return orderRepositories.GetNumberOrderByDay(day, month, year);
+        }
+
+        public int GetNumberOrderByMonth(int month, int year)
+        {
+            return orderRepositories.GetNumberOrderByMonth(month, year);
+        }
+
+        public int GetNumberOrderByYear(int year)
+        {
+            return orderRepositories.GetNumberOrderByYear(year);
+        }
+
+        public IEnumerable<TypeProduct> GetTopTypeProduct(int month, int year)
+        {
+            throw new NotImplementedException();
+        }
+
+        public double GetTotalByDate(int day, int month, int year)
+        {
+            return orderRepositories.GetTotalByDate(day, month, year);
+        }
+
+        public double GetTotalByMonthAndYear(int month, int year)
+        {
+            return orderRepositories.GetTotalByMonthAndYear(month, year);
+        }
+
+        public double GetTotalByYear(int year)
+        {
+            return orderRepositories.GetTotalByYear(year);
+        }
+
         public void insertOrder(Order order)
         {
             orderRepositories.insertOrder(order);

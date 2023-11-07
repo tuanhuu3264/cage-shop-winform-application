@@ -2050,19 +2050,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ngoc Tuan\\.nuget\\packages\\": {}
+    "C:\\Users\\BIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
+      "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
       "projectName": "BusinessObject",
-      "projectPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
-      "packagesPath": "C:\\Users\\Ngoc Tuan\\.nuget\\packages\\",
-      "outputPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\obj\\",
+      "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
+      "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ngoc Tuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2125,7 +2125,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

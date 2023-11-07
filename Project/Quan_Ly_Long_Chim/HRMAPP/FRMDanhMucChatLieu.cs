@@ -181,7 +181,7 @@ namespace HRMAPP
                 btn_luuChatLieu.Enabled = false;
                 txt_maChatLieu.Enabled = false;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Không thể xóa chất liệu mã " + txt_maChatLieu.Text + " này được", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

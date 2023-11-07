@@ -54,5 +54,12 @@ namespace HRMDAO
                 db.SaveChanges();
             }
         }
+         public int NumberNewCustomerByMonth(int month, int year)
+        {
+            var number = listCustomers().Where(m => m.CreateAt != null &&
+                                                 m.CreateAt.Value.Month.Equals(month) &&
+                                                 m.CreateAt.Value.Year.Equals(year)).Count();
+            return number;
+        }
     }
 }

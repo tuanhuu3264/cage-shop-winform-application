@@ -14,7 +14,25 @@ namespace HRMRepositories
         => OrderDAO.Instance.checkIdOrder(id);
 
         public void deleteOrder(string id)
-        => OrderDAO.Instance.deleteOrder(id);   
+        => OrderDAO.Instance.deleteOrder(id);
+
+        public int GetNumberOrderByDay(int day, int month, int year)=>OrderDAO.Instance.GetNumberOrderByDay(day, month, year);
+
+        public int GetNumberOrderByMonth(int month, int year)=>OrderDAO.Instance.GetNumberOrderByMonth(month, year);
+
+        public int GetNumberOrderByYear(int year) => OrderDAO.Instance.GetNumberOrderByYear(year);
+
+        public IEnumerable<object> GetTopTypeProduct(int month, int year)
+        {
+            throw new NotImplementedException();
+        }
+
+        public double GetTotalByDate(int day, int month, int year)=>OrderDAO.Instance.GetTotalByDate(day, month, year);
+
+        public double GetTotalByMonthAndYear(int month, int year)=>OrderDAO.Instance.GetTotalByMonthAndYear(month, year);
+
+        public double GetTotalByYear(int year)=>OrderDAO.Instance.GetTotalByYear(year);
+
         public void insertOrder(Order order)
         => OrderDAO.Instance.insertOrder(order);
 

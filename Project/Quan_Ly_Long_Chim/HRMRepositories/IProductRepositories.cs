@@ -21,6 +21,8 @@ namespace HRMRepositories
 
          void deleteProduct(string id);
          void updateQuantityProduct(double quantity, string id);
-     
+        double GetTotalStockProduct();
+
+
     }
 }

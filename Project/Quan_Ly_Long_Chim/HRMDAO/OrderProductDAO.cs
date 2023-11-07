@@ -123,5 +123,56 @@ namespace HRMDAO
                 }
             }
         }
+        public class TopProduct
+        {
+            public string ProductName { get; set; }
+            public int TotalQuantity { get; set; }
+        }
+        public IEnumerable<TopProduct> GetTopProduct(int month, int year)
+        {
+            var orderProducts = listOrderProducts()
+                .Where(m => m.IdProductNavigation != null &&
+                            m.IdOrderNavigation != null &&
+                            m.IdOrderNavigation.DateBuy != null &&
+                            m.IdOrderNavigation.DateBuy.Value.Month.Equals(month) &&
+                            m.IdOrderNavigation.DateBuy.Value.Year.Equals(year))
+                .GroupBy(m => m.IdProductNavigation?.Name)
+                .Select(group => new TopProduct
+                {
+                    ProductName = group.FirstOrDefault()?.IdProductNavigation?.Name,
+                    TotalQuantity = (int)(group == null ? 0 : group.Sum(m => m.Quantity))
+                })
+                .OrderByDescending(tp => tp.TotalQuantity)
+                .Take(5);
+            return orderProducts!;
+        }
+        public class TopTypeProduct
+        {
+            public string TypeProductName { get; set; }
+            public int TotalQuantity { get; set; }
+        }
+        public  IEnumerable<TopTypeProduct> GetTopTypeProduct(int month, int year)
+        {
+            var orderProducts = listOrderProducts()
+                .Where(m => m.IdOrderNavigation != null &&
+                           m.IdOrderNavigation.DateBuy?.Month == month &&
+                           m.IdOrderNavigation.DateBuy?.Year == year)
+               .GroupBy(m => m.IdProductNavigation?.IdTypeProduct)
+               .Select(group => new TopTypeProduct
+               {
+                   TypeProductName = group.FirstOrDefault()?.IdProductNavigation?.IdTypeProductNavigation?.Name,
+                   TotalQuantity = (int)(group == null ? 0 : group.Sum(m => m.Quantity))
+               })
+               .OrderByDescending(tp => tp.TotalQuantity);
+
+            return orderProducts;
+        }
+        public double GetTotalProductToSellByMonth(int month, int year)
+        {
+            var number = listOrderProducts().Where(m=>m.IdOrderNavigation != null &&
+                           m.IdOrderNavigation.DateBuy?.Month == month &&
+                           m.IdOrderNavigation.DateBuy?.Year == year).Sum(m=>m.Quantity);
+            return (double)(number !=null?number:0);
+        }
     }
 }

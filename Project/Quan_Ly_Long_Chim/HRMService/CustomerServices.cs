@@ -26,6 +26,11 @@ namespace HRMService
             return customerRepositories.listCustomers();
         }
 
+        public int NumberNewCustomerByMonth(int month, int year)
+        {
+            return customerRepositories.NumberNewCustomerByMonth(month, year);
+        }
+
         public void updateCustomer(Customer customer)
         {
             customerRepositories.updateCustomer(customer);

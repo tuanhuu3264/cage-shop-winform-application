@@ -16,6 +16,12 @@ namespace HRMRepositories
          void updateTotalOrder(double newTotal, string id);
 
          void deleteOrder(string id);
-
+        int GetNumberOrderByDay(int day, int month, int year);
+        int GetNumberOrderByMonth(int month, int year);
+        int GetNumberOrderByYear(int year);
+        double GetTotalByDate(int day, int month, int year);
+        double GetTotalByMonthAndYear(int month, int year);
+        double GetTotalByYear(int year);
+        IEnumerable<Object> GetTopTypeProduct(int month, int year);
     }
 }

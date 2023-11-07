@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static HRMDAO.OrderProductDAO;
 
 namespace HRMRepositories
 {
@@ -18,6 +19,10 @@ namespace HRMRepositories
          void deleteOrderProduct(string idOrder);
 
          void deleteOrderProductByIdOrderAndIdProduct(string idOrder, string idProduct);
-     
+
+        IEnumerable<TopTypeProduct> GetTopTypeProduct(int month, int year);
+        IEnumerable<TopProduct> GetTopProduct(int month, int year);
+        double GetTotalProductToSellByMonth(int month, int year);
+
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj": {}
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj": {}
   },
   "projects": {
-    "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\Ngoc Tuan\\.nuget\\packages\\",
-        "outputPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\obj\\",
+        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ngoc Tuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj": {
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
+        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
         "projectName": "HRMDAO",
-        "projectPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
-        "packagesPath": "C:\\Users\\Ngoc Tuan\\.nuget\\packages\\",
-        "outputPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMDAO\\obj\\",
+        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
+        "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ngoc Tuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
+              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
@@ -136,21 +136,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj": {
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj",
+        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj",
         "projectName": "HRMRepositories",
-        "projectPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj",
-        "packagesPath": "C:\\Users\\Ngoc Tuan\\.nuget\\packages\\",
-        "outputPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMRepositories\\obj\\",
+        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj",
+        "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ngoc Tuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,11 +164,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
+              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
               },
-              "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj": {
-                "projectPath": "D:\\LAB_PRN211\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj"
+              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj": {
+                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj"
               }
             }
           }
@@ -198,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

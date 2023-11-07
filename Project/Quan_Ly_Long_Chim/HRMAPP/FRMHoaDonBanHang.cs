@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using COMExcel = Microsoft.Office.Interop.Excel;
+/*using COMExcel = Microsoft.Office.Interop.Excel;*/
 
 namespace HRMAPP
 {

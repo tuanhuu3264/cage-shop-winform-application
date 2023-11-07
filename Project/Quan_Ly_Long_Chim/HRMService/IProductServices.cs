@@ -16,5 +16,6 @@ namespace HRMService
         void updateProduct(Product product);
         void deleteProduct(string id);
         void updateQuantityProduct(double quantity, string id);
+        double GetTotalStockProduct();
     }
 }

@@ -68,5 +68,39 @@ namespace HRMDAO
                 db.SaveChanges();
             }
         }
+        public int GetNumberOrderByDay(int day, int month, int year)
+        {
+            var temp = listOrders().Where(m=> m.DateBuy != null && m.DateBuy.Value.Day.Equals(day)&&m.DateBuy.Value.Month.Equals(month)&&m.DateBuy.Value.Year.Equals(year));
+            return temp.Count();
+        }
+        public int GetNumberOrderByMonth(int month, int year)
+        {
+            var temp = listOrders().Where(m => m.DateBuy != null && m.DateBuy.Value.Month.Equals(month) && m.DateBuy.Value.Year.Equals(year));
+            return temp.Count();
+        }
+        public int GetNumberOrderByYear(int year)
+        {
+            var temp = listOrders().Where(m => m.DateBuy != null && m.DateBuy.Value.Year.Equals(year));
+            return temp.Count();
+        }
+        public double GetTotalByDate(int day, int month, int year)
+        {
+            var temp = listOrders().Where(m => m.DateBuy != null && m.DateBuy.Value.Day.Equals(day) && m.DateBuy.Value.Month.Equals(month) && m.DateBuy.Value.Year.Equals(year)).Sum(m=>m.Total);
+            return temp!=null?(double)temp:0;
+        }
+        public double GetTotalByMonthAndYear(int month, int year)
+        {
+            var temp = listOrders().Where(m => m.DateBuy != null && m.DateBuy.Value.Month.Equals(month) && m.DateBuy.Value.Year.Equals(year)).Sum(m => m.Total);
+            return temp != null ? (double)temp : 0;
+        }
+        public double GetTotalByYear(int year)
+        {
+            var temp = listOrders().Where(m => m.DateBuy != null && m.DateBuy.Value.Year.Equals(year)).Sum(m => m.Total);
+            return temp != null ? (double)temp : 0;
+        }
+        public IEnumerable<Object> GetTopTypeProduct(int month, int year)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

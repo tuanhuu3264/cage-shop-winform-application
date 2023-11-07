@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static HRMDAO.OrderProductDAO;
 
 namespace HRMService
 {
@@ -24,6 +25,22 @@ namespace HRMService
         {
             orderProductRepositories.deleteOrderProductByIdOrderAndIdProduct(idOrder, idProduct);
         }
+
+        public IEnumerable<TopProduct> GetTopProduct(int month, int year)
+        {
+            return orderProductRepositories.GetTopProduct(month, year);
+        }
+
+        public IEnumerable<TopTypeProduct> GetTopTypeProduct(int month, int year)
+        {
+            return orderProductRepositories.GetTopTypeProduct(month, year);
+        }
+
+        public double GetTotalProductToSellByMonth(int month, int year)
+        {
+            return orderProductRepositories.GetTotalProductToSellByMonth(month, year);
+        }
+
         public void insertOrderProduct(OrderProduct orderProduct)
         {
             orderProductRepositories.insertOrderProduct(orderProduct);

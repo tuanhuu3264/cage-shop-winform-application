@@ -1,4 +1,6 @@
-﻿namespace HRMAPP
+﻿using BirdManageShop;
+
+namespace HRMAPP
 {
     public partial class FRMTrangChu : Form
     {
@@ -55,6 +57,13 @@
             FRMDanhMucTimKiemHoaDon frmTimKiemHoaDon = new FRMDanhMucTimKiemHoaDon();
             frmTimKiemHoaDon.MdiParent = this;
             frmTimKiemHoaDon.Show();
+        }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRMThongKe fRMThongKe = new FRMThongKe();
+            fRMThongKe.MdiParent = this;
+            fRMThongKe.Show();
         }
     }
 }

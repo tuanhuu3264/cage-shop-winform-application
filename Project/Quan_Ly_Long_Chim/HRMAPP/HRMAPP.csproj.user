@@ -25,5 +25,8 @@
     <Compile Update="FRMHoaDonBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FRMThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

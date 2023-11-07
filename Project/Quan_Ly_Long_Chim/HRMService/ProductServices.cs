@@ -28,6 +28,12 @@ namespace HRMService
         {
             return productRepositories.GetProduct(id);
         }
+
+        public double GetTotalStockProduct()
+        {
+            return productRepositories.GetTotalStockProduct();
+        }
+
         public void insertProduct(Product product)
         {
             productRepositories.insertProduct(product);

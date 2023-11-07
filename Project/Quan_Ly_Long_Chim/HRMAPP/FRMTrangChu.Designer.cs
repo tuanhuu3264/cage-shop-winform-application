@@ -42,6 +42,7 @@
             tìmKiếmHóaĐơnToolStripMenuItem = new ToolStripMenuItem();
             báoCáoToolStripMenuItem = new ToolStripMenuItem();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
+            thốngKêToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -86,7 +87,7 @@
             chấtLiệuToolStripMenuItem.Image = (Image)resources.GetObject("chấtLiệuToolStripMenuItem.Image");
             chấtLiệuToolStripMenuItem.Name = "chấtLiệuToolStripMenuItem";
             chấtLiệuToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
-            chấtLiệuToolStripMenuItem.Size = new Size(220, 26);
+            chấtLiệuToolStripMenuItem.Size = new Size(224, 26);
             chấtLiệuToolStripMenuItem.Text = "&Chất liệu";
             chấtLiệuToolStripMenuItem.Click += chấtLiệuToolStripMenuItem_Click;
             // 
@@ -96,7 +97,7 @@
             hàngHóaToolStripMenuItem.Image = (Image)resources.GetObject("hàngHóaToolStripMenuItem.Image");
             hàngHóaToolStripMenuItem.Name = "hàngHóaToolStripMenuItem";
             hàngHóaToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.H;
-            hàngHóaToolStripMenuItem.Size = new Size(220, 26);
+            hàngHóaToolStripMenuItem.Size = new Size(224, 26);
             hàngHóaToolStripMenuItem.Text = "&Hàng hóa";
             hàngHóaToolStripMenuItem.Click += hàngHóaToolStripMenuItem_Click;
             // 
@@ -106,7 +107,7 @@
             nhânViênToolStripMenuItem.Image = (Image)resources.GetObject("nhânViênToolStripMenuItem.Image");
             nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
             nhânViênToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
-            nhânViênToolStripMenuItem.Size = new Size(220, 26);
+            nhânViênToolStripMenuItem.Size = new Size(224, 26);
             nhânViênToolStripMenuItem.Text = "&Nhân viên";
             nhânViênToolStripMenuItem.Click += nhânViênToolStripMenuItem_Click;
             // 
@@ -116,7 +117,7 @@
             kháchHàngToolStripMenuItem.Image = (Image)resources.GetObject("kháchHàngToolStripMenuItem.Image");
             kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
             kháchHàngToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.K;
-            kháchHàngToolStripMenuItem.Size = new Size(220, 26);
+            kháchHàngToolStripMenuItem.Size = new Size(224, 26);
             kháchHàngToolStripMenuItem.Text = "&Khách hàng";
             kháchHàngToolStripMenuItem.Click += kháchHàngToolStripMenuItem_Click;
             // 
@@ -150,6 +151,7 @@
             // 
             // báoCáoToolStripMenuItem
             // 
+            báoCáoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { thốngKêToolStripMenuItem });
             báoCáoToolStripMenuItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
             báoCáoToolStripMenuItem.Size = new Size(78, 24);
@@ -161,6 +163,13 @@
             sqlCommand1.Connection = null;
             sqlCommand1.Notification = null;
             sqlCommand1.Transaction = null;
+            // 
+            // thốngKêToolStripMenuItem
+            // 
+            thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
+            thốngKêToolStripMenuItem.Size = new Size(224, 26);
+            thốngKêToolStripMenuItem.Text = "Thống kê";
+            thốngKêToolStripMenuItem.Click += thốngKêToolStripMenuItem_Click;
             // 
             // FRMTrangChu
             // 
@@ -199,5 +208,6 @@
         private ToolStripMenuItem báoCáoToolStripMenuItem;
         private ToolStripMenuItem tìmKiếmHóaĐơnToolStripMenuItem;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
+        private ToolStripMenuItem thốngKêToolStripMenuItem;
     }
 }

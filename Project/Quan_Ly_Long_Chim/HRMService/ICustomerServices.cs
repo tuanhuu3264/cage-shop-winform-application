@@ -13,5 +13,6 @@ namespace HRMService
          void insertCustomer(Customer customer);
          void updateCustomer(Customer customer);
          void deteleCustomer(string id);
+        int NumberNewCustomerByMonth(int month, int year);
     }
 }

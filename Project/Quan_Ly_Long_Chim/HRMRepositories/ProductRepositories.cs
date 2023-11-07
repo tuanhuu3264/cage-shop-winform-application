@@ -17,6 +17,10 @@ namespace HRMRepositories
         => ProductDAO.Instance.deleteProduct(id);
         public Product GetProduct(string id)
         => ProductDAO.Instance.GetProduct(id);
+
+        public double GetTotalStockProduct()
+        => ProductDAO.Instance.GetTotalStockProduct();
+
         public void insertProduct(Product product)
         => ProductDAO.Instance.insertProduct(product);
 

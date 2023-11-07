@@ -12,6 +12,9 @@ namespace HRMRepositories
         public List<Customer> listCustomers()
         => CustomerDAO.Instance.listCustomers();
 
+        public int NumberNewCustomerByMonth(int month, int year)
+        => CustomerDAO.Instance.NumberNewCustomerByMonth(month, year);
+
         public void updateCustomer(Customer customer)
         => CustomerDAO.Instance.updateCustomer(customer);
     }

@@ -83,7 +83,11 @@ namespace HRMDAO
                     product.Quantity = ((int)quantity);
                     db.SaveChanges();
                 }
-            
+         }
+        public double GetTotalStockProduct()
+        {
+            var number = listProducts().Sum(m=>m.Quantity);
+            return (double)(number !=null? number : 0);
         }
     }
 }

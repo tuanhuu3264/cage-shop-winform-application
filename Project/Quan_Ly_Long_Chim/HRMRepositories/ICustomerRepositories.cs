@@ -16,6 +16,7 @@ namespace HRMRepositories
          void updateCustomer(Customer customer);
 
          void deteleCustomer(string id);
+        int NumberNewCustomerByMonth(int month, int year);
 
     }
 }

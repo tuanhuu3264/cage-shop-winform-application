@@ -2084,11 +2084,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMAPP\\HRMAPP.csproj",
+      "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMAPP\\HRMAPP.csproj",
       "projectName": "HRMAPP",
-      "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMAPP\\HRMAPP.csproj",
+      "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMAPP\\HRMAPP.csproj",
       "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMAPP\\obj\\",
+      "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2105,11 +2105,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
+            "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
             },
-            "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj": {
-              "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj"
+            "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj": {
+              "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj"
             }
           }
         }

@@ -38,5 +38,9 @@ namespace HRMService
         {
             staffRepositories.updateStaff(s);
         }
+        public staff checkLogin(string email, string password)
+        {
+            return staffRepositories.checkLogin(email, password);   
+        }
     }
 }

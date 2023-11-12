@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rzCVeCW8+oKX2KbZbKYTcu2LYHCg85sDC2ekSfK1Ywr7bLGJHic6n3uW5O2vP/IrzMw8RMx0m5d/kp42kMBNQQ==",
+  "dgSpecHash": "i+oujbboxozpT3dUYrPMRh+I+P5NIw0vznBkGKp+lsk69rTwocYEnPRN0PO/JkCKzyxa0sZKuNaW9BlBmrcu0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
+  "projectFilePath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

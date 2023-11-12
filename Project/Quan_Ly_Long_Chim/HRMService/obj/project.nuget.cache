@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2JOyccQQT09nJxZMoJEg00NXV5uBre4F010aPelqna9LjrU5gfKIfzzECMFNz5kyLndwOR4KMxlKeJer1sbLWA==",
+  "dgSpecHash": "CqiDYNLbfGLltbOgASengXiaQ/zMcU0PZzvPspnzB/HDKTkN6ibqfR7mQSHHxw2KH7wpywsL7gEqDhVsh2rkkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj",
+  "projectFilePath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

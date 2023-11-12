@@ -1,13 +1,16 @@
 ﻿using BirdManageShop;
+using BusinessObject.Models;
 
 namespace HRMAPP
 {
     public partial class FRMTrangChu : Form
     {
-        public FRMTrangChu()
+        staff account;
+        public FRMTrangChu(staff account)
         {
             InitializeComponent();
             this.IsMdiContainer = true;
+            this.account = account;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -18,7 +21,11 @@ namespace HRMAPP
 
         private void chấtLiệuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (account.Role.ToLower().Equals("staff"))
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             FRMDanhMucChatLieu frmChatLieu = new FRMDanhMucChatLieu();
             frmChatLieu.MdiParent = this;
             frmChatLieu.Show();
@@ -26,6 +33,11 @@ namespace HRMAPP
 
         private void hàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (account.Role.ToLower().Equals("staff"))
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             FRMDanhMucHangHoa frmHangHoa = new FRMDanhMucHangHoa();
             frmHangHoa.MdiParent = this;
             frmHangHoa.Show();
@@ -33,6 +45,11 @@ namespace HRMAPP
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (account.Role.ToLower().Equals("staff"))
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             FRMDanhMucNhanVien frmNhanVien = new FRMDanhMucNhanVien();
             frmNhanVien.MdiParent = this;
             frmNhanVien.Show();
@@ -61,6 +78,11 @@ namespace HRMAPP
 
         private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (account.Role.ToLower().Equals("staff"))
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             FRMThongKe fRMThongKe = new FRMThongKe();
             fRMThongKe.MdiParent = this;
             fRMThongKe.Show();

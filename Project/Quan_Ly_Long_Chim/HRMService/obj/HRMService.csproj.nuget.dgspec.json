@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj": {}
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
+        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj",
         "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\obj\\",
+        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj": {
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
+        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
         "projectName": "HRMDAO",
-        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
+        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj",
         "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\obj\\",
+        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
+              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
@@ -140,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj": {
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj",
+        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj",
         "projectName": "HRMRepositories",
-        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj",
+        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj",
         "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\obj\\",
+        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -164,11 +164,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
+              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
               },
-              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj": {
-                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj"
+              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj": {
+                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMDAO\\HRMDAO.csproj"
               }
             }
           }
@@ -202,14 +202,14 @@
         }
       }
     },
-    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj": {
+    "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj",
+        "projectUniqueName": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj",
         "projectName": "HRMService",
-        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj",
+        "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\HRMService.csproj",
         "packagesPath": "C:\\Users\\BIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\obj\\",
+        "outputPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,11 +226,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
+              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\BusinessObject\\BusinessObject.csproj"
               },
-              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj": {
-                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj"
+              "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj": {
+                "projectPath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMRepositories\\HRMRepositories.csproj"
               }
             }
           }

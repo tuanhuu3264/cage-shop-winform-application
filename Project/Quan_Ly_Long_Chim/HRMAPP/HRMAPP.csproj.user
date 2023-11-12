@@ -4,6 +4,9 @@
     <Compile Update="FRMHoaDonCuaKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FRMLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FRMTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>

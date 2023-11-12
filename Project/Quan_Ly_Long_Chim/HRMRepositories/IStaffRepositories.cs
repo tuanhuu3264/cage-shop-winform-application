@@ -17,6 +17,7 @@ namespace HRMRepositories
          void updateStaff(staff s);
 
          void deleteStaff(string id);
+        staff checkLogin(string email, string password);
      
     }
 }

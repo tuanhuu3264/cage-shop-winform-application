@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMDanhMucNhanVien));
             panel1 = new Panel();
+            label13 = new Label();
+            txt_matKhau = new TextBox();
+            button1 = new Button();
             date_ngaySinh = new DateTimePicker();
             masked_dienThoaiNhanVien = new MaskedTextBox();
             radio_nu = new RadioButton();
@@ -66,7 +69,8 @@
             btn_xoaNhanVien = new Button();
             btn_themNhanVien = new Button();
             dgv_nhanVien = new DataGridView();
-            button1 = new Button();
+            combox_Role = new ComboBox();
+            label14 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picture_nhanVien).BeginInit();
             panel2.SuspendLayout();
@@ -75,6 +79,10 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(label14);
+            panel1.Controls.Add(combox_Role);
+            panel1.Controls.Add(label13);
+            panel1.Controls.Add(txt_matKhau);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(date_ngaySinh);
             panel1.Controls.Add(masked_dienThoaiNhanVien);
@@ -108,16 +116,42 @@
             panel1.Size = new Size(1125, 286);
             panel1.TabIndex = 0;
             // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.Location = new Point(61, 189);
+            label13.Name = "label13";
+            label13.Size = new Size(70, 20);
+            label13.TabIndex = 66;
+            label13.Text = "Password";
+            // 
+            // txt_matKhau
+            // 
+            txt_matKhau.Location = new Point(155, 186);
+            txt_matKhau.Name = "txt_matKhau";
+            txt_matKhau.Size = new Size(283, 27);
+            txt_matKhau.TabIndex = 65;
+            // 
+            // button1
+            // 
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(340, 7);
+            button1.Name = "button1";
+            button1.Size = new Size(58, 47);
+            button1.TabIndex = 64;
+            button1.UseVisualStyleBackColor = true;
+            // 
             // date_ngaySinh
             // 
-            date_ngaySinh.Location = new Point(605, 161);
+            date_ngaySinh.Location = new Point(612, 142);
             date_ngaySinh.Name = "date_ngaySinh";
             date_ngaySinh.Size = new Size(283, 27);
             date_ngaySinh.TabIndex = 63;
             // 
             // masked_dienThoaiNhanVien
             // 
-            masked_dienThoaiNhanVien.Location = new Point(605, 117);
+            masked_dienThoaiNhanVien.Location = new Point(612, 98);
             masked_dienThoaiNhanVien.Mask = "(999) 000-0000";
             masked_dienThoaiNhanVien.Name = "masked_dienThoaiNhanVien";
             masked_dienThoaiNhanVien.Size = new Size(283, 27);
@@ -126,7 +160,7 @@
             // radio_nu
             // 
             radio_nu.AutoSize = true;
-            radio_nu.Location = new Point(229, 252);
+            radio_nu.Location = new Point(235, 259);
             radio_nu.Name = "radio_nu";
             radio_nu.Size = new Size(50, 24);
             radio_nu.TabIndex = 61;
@@ -137,7 +171,7 @@
             // radio_nam
             // 
             radio_nam.AutoSize = true;
-            radio_nam.Location = new Point(148, 252);
+            radio_nam.Location = new Point(155, 259);
             radio_nam.Name = "radio_nam";
             radio_nam.Size = new Size(62, 24);
             radio_nam.TabIndex = 60;
@@ -147,21 +181,21 @@
             // 
             // date_ngayLam
             // 
-            date_ngayLam.Location = new Point(148, 202);
+            date_ngayLam.Location = new Point(155, 226);
             date_ngayLam.Name = "date_ngayLam";
             date_ngayLam.Size = new Size(283, 27);
             date_ngayLam.TabIndex = 59;
             // 
             // txt_bangChu
             // 
-            txt_bangChu.Location = new Point(605, 251);
+            txt_bangChu.Location = new Point(612, 219);
             txt_bangChu.Name = "txt_bangChu";
             txt_bangChu.Size = new Size(283, 27);
             txt_bangChu.TabIndex = 58;
             // 
             // txt_luong
             // 
-            txt_luong.Location = new Point(605, 205);
+            txt_luong.Location = new Point(612, 182);
             txt_luong.Name = "txt_luong";
             txt_luong.Size = new Size(283, 27);
             txt_luong.TabIndex = 57;
@@ -170,7 +204,7 @@
             // 
             // txt_email
             // 
-            txt_email.Location = new Point(148, 161);
+            txt_email.Location = new Point(155, 142);
             txt_email.Name = "txt_email";
             txt_email.Size = new Size(283, 27);
             txt_email.TabIndex = 52;
@@ -185,7 +219,7 @@
             // 
             // txt_diaChi
             // 
-            txt_diaChi.Location = new Point(605, 76);
+            txt_diaChi.Location = new Point(612, 57);
             txt_diaChi.Name = "txt_diaChi";
             txt_diaChi.Size = new Size(283, 27);
             txt_diaChi.TabIndex = 50;
@@ -205,7 +239,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(499, 254);
+            label5.Location = new Point(499, 225);
             label5.Name = "label5";
             label5.Size = new Size(78, 20);
             label5.TabIndex = 48;
@@ -222,14 +256,14 @@
             // 
             // txt_tenNhanVien
             // 
-            txt_tenNhanVien.Location = new Point(148, 117);
+            txt_tenNhanVien.Location = new Point(155, 98);
             txt_tenNhanVien.Name = "txt_tenNhanVien";
             txt_tenNhanVien.Size = new Size(283, 27);
             txt_tenNhanVien.TabIndex = 39;
             // 
             // txt_maNhanVien
             // 
-            txt_maNhanVien.Location = new Point(148, 75);
+            txt_maNhanVien.Location = new Point(155, 57);
             txt_maNhanVien.Name = "txt_maNhanVien";
             txt_maNhanVien.Size = new Size(283, 27);
             txt_maNhanVien.TabIndex = 38;
@@ -248,7 +282,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(519, 208);
+            label12.Location = new Point(526, 189);
             label12.Name = "label12";
             label12.Size = new Size(58, 20);
             label12.TabIndex = 36;
@@ -258,7 +292,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(496, 164);
+            label11.Location = new Point(503, 145);
             label11.Name = "label11";
             label11.Size = new Size(81, 20);
             label11.TabIndex = 35;
@@ -268,7 +302,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(492, 120);
+            label10.Location = new Point(499, 101);
             label10.Name = "label10";
             label10.Size = new Size(85, 20);
             label10.TabIndex = 34;
@@ -278,7 +312,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(515, 78);
+            label9.Location = new Point(522, 59);
             label9.Name = "label9";
             label9.Size = new Size(62, 20);
             label9.TabIndex = 33;
@@ -288,7 +322,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(54, 254);
+            label7.Location = new Point(61, 261);
             label7.Name = "label7";
             label7.Size = new Size(76, 20);
             label7.TabIndex = 31;
@@ -298,7 +332,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(46, 208);
+            label6.Location = new Point(57, 228);
             label6.Name = "label6";
             label6.Size = new Size(80, 20);
             label6.TabIndex = 30;
@@ -308,7 +342,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(73, 164);
+            label4.Location = new Point(80, 145);
             label4.Name = "label4";
             label4.Size = new Size(53, 20);
             label4.TabIndex = 28;
@@ -318,7 +352,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(20, 120);
+            label3.Location = new Point(27, 101);
             label3.Name = "label3";
             label3.Size = new Size(106, 20);
             label3.TabIndex = 27;
@@ -328,7 +362,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(26, 79);
+            label2.Location = new Point(33, 60);
             label2.Name = "label2";
             label2.Size = new Size(104, 20);
             label2.TabIndex = 26;
@@ -477,14 +511,23 @@
             dgv_nhanVien.TabIndex = 2;
             dgv_nhanVien.CellContentClick += dgv_nhanVien_CellContentClick;
             // 
-            // button1
+            // combox_Role
             // 
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(340, 7);
-            button1.Name = "button1";
-            button1.Size = new Size(58, 55);
-            button1.TabIndex = 64;
-            button1.UseVisualStyleBackColor = true;
+            combox_Role.FormattingEnabled = true;
+            combox_Role.Location = new Point(612, 255);
+            combox_Role.Name = "combox_Role";
+            combox_Role.Size = new Size(151, 28);
+            combox_Role.TabIndex = 67;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.Location = new Point(499, 263);
+            label14.Name = "label14";
+            label14.Size = new Size(61, 20);
+            label14.TabIndex = 68;
+            label14.Text = "Chức vụ";
             // 
             // FRMDanhMucNhanVien
             // 
@@ -546,5 +589,9 @@
         private Button btn_xoaNhanVien;
         private Button btn_themNhanVien;
         private Button button1;
+        private TextBox txt_matKhau;
+        private Label label13;
+        private Label label14;
+        private ComboBox combox_Role;
     }
 }

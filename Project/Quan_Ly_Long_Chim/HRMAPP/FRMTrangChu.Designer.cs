@@ -41,7 +41,6 @@
             hóaĐơnBánToolStripMenuItem = new ToolStripMenuItem();
             tìmKiếmHóaĐơnToolStripMenuItem = new ToolStripMenuItem();
             báoCáoToolStripMenuItem = new ToolStripMenuItem();
-            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             thốngKêToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -53,7 +52,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1125, 28);
-            menuStrip1.TabIndex = 0;
+            menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // tệpTinToolStripMenuItem
@@ -70,7 +69,7 @@
             thoátToolStripMenuItem.Image = (Image)resources.GetObject("thoátToolStripMenuItem.Image");
             thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             thoátToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.F4;
-            thoátToolStripMenuItem.Size = new Size(183, 26);
+            thoátToolStripMenuItem.Size = new Size(224, 26);
             thoátToolStripMenuItem.Text = "&Thoát";
             // 
             // danhMụcToolStripMenuItem
@@ -87,7 +86,7 @@
             chấtLiệuToolStripMenuItem.Image = (Image)resources.GetObject("chấtLiệuToolStripMenuItem.Image");
             chấtLiệuToolStripMenuItem.Name = "chấtLiệuToolStripMenuItem";
             chấtLiệuToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
-            chấtLiệuToolStripMenuItem.Size = new Size(224, 26);
+            chấtLiệuToolStripMenuItem.Size = new Size(220, 26);
             chấtLiệuToolStripMenuItem.Text = "&Chất liệu";
             chấtLiệuToolStripMenuItem.Click += chấtLiệuToolStripMenuItem_Click;
             // 
@@ -97,7 +96,7 @@
             hàngHóaToolStripMenuItem.Image = (Image)resources.GetObject("hàngHóaToolStripMenuItem.Image");
             hàngHóaToolStripMenuItem.Name = "hàngHóaToolStripMenuItem";
             hàngHóaToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.H;
-            hàngHóaToolStripMenuItem.Size = new Size(224, 26);
+            hàngHóaToolStripMenuItem.Size = new Size(220, 26);
             hàngHóaToolStripMenuItem.Text = "&Hàng hóa";
             hàngHóaToolStripMenuItem.Click += hàngHóaToolStripMenuItem_Click;
             // 
@@ -107,7 +106,7 @@
             nhânViênToolStripMenuItem.Image = (Image)resources.GetObject("nhânViênToolStripMenuItem.Image");
             nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
             nhânViênToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
-            nhânViênToolStripMenuItem.Size = new Size(224, 26);
+            nhânViênToolStripMenuItem.Size = new Size(220, 26);
             nhânViênToolStripMenuItem.Text = "&Nhân viên";
             nhânViênToolStripMenuItem.Click += nhânViênToolStripMenuItem_Click;
             // 
@@ -117,7 +116,7 @@
             kháchHàngToolStripMenuItem.Image = (Image)resources.GetObject("kháchHàngToolStripMenuItem.Image");
             kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
             kháchHàngToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.K;
-            kháchHàngToolStripMenuItem.Size = new Size(224, 26);
+            kháchHàngToolStripMenuItem.Size = new Size(220, 26);
             kháchHàngToolStripMenuItem.Text = "&Khách hàng";
             kháchHàngToolStripMenuItem.Click += kháchHàngToolStripMenuItem_Click;
             // 
@@ -132,6 +131,7 @@
             // hóaĐơnBánToolStripMenuItem
             // 
             hóaĐơnBánToolStripMenuItem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            hóaĐơnBánToolStripMenuItem.ForeColor = Color.DarkCyan;
             hóaĐơnBánToolStripMenuItem.Image = (Image)resources.GetObject("hóaĐơnBánToolStripMenuItem.Image");
             hóaĐơnBánToolStripMenuItem.Name = "hóaĐơnBánToolStripMenuItem";
             hóaĐơnBánToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.B;
@@ -157,13 +157,6 @@
             báoCáoToolStripMenuItem.Size = new Size(78, 24);
             báoCáoToolStripMenuItem.Text = "&Báo cáo";
             // 
-            // sqlCommand1
-            // 
-            sqlCommand1.CommandTimeout = 30;
-            sqlCommand1.Connection = null;
-            sqlCommand1.Notification = null;
-            sqlCommand1.Transaction = null;
-            // 
             // thốngKêToolStripMenuItem
             // 
             thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
@@ -182,7 +175,6 @@
             Controls.Add(menuStrip1);
             DoubleBuffered = true;
             ForeColor = SystemColors.Control;
-            MainMenuStrip = menuStrip1;
             Name = "FRMTrangChu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";
@@ -205,9 +197,8 @@
         private ToolStripMenuItem kháchHàngToolStripMenuItem;
         private ToolStripMenuItem hóaĐơnToolStripMenuItem;
         private ToolStripMenuItem hóaĐơnBánToolStripMenuItem;
-        private ToolStripMenuItem báoCáoToolStripMenuItem;
         private ToolStripMenuItem tìmKiếmHóaĐơnToolStripMenuItem;
-        private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
+        private ToolStripMenuItem báoCáoToolStripMenuItem;
         private ToolStripMenuItem thốngKêToolStripMenuItem;
     }
 }

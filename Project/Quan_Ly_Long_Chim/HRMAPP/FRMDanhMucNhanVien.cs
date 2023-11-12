@@ -20,6 +20,8 @@ namespace HRMAPP
         {
             InitializeComponent();
             staffServices = new StaffServices();
+            combox_Role.Items.Add("staff");
+            combox_Role.Items.Add("manager");
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -93,6 +95,7 @@ namespace HRMAPP
             txt_bangChu.Text = "";
             date_ngayLam.Value = DateTime.Now;
             txt_email.Text = "";
+            txt_matKhau.Clear();
 
         }
         private void dgv_nhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -112,23 +115,27 @@ namespace HRMAPP
             if (index >= 0)
             {
                 txt_maNhanVien.Text = dgv_nhanVien.Rows[index].Cells["id"].Value.ToString();
-                txt_tenNhanVien.Text = dgv_nhanVien.Rows[index].Cells["name"].Value.ToString();
-                if (dgv_nhanVien.Rows[index].Cells["gender"].Value.ToString() == "Nam")
+                staff staff = staffServices.GetStaff(txt_maNhanVien.Text);
+                txt_tenNhanVien.Text = staff.Name;
+                if (staff.Gender== "Nam")
                 {
                     radio_nam.Checked = true;
                 }
-                if (dgv_nhanVien.Rows[index].Cells["gender"].Value.ToString() == "Nữ")
+                if (staff.Gender== "Nữ")
                 {
                     radio_nu.Checked = true;
                 }
-                txt_email.Text = dgv_nhanVien.Rows[index].Cells["email"].Value.ToString();
-                txt_diaChi.Text = dgv_nhanVien.Rows[index].Cells["address"].Value.ToString();
-                masked_dienThoaiNhanVien.Text = dgv_nhanVien.Rows[index].Cells["phone"].Value.ToString();
-                date_ngaySinh.Value = DateTime.Parse(dgv_nhanVien.Rows[index].Cells["dateBirth"].Value.ToString());
-                date_ngayLam.Value = DateTime.Parse(dgv_nhanVien.Rows[index].Cells["dateWork"].Value.ToString());
-                txt_luong.Text = dgv_nhanVien.Rows[index].Cells["salary"].Value.ToString();
+                
+                combox_Role.Text = staff.Role;
+                txt_matKhau.Text = staff.Password;
+                txt_email.Text = staff.Email;
+                txt_diaChi.Text = staff.Address;
+                masked_dienThoaiNhanVien.Text = staff.Phone;
+                date_ngaySinh.Value = (DateTime)staff.DateBirth;
+                date_ngayLam.Value = (DateTime)staff.DateWork;
+                txt_luong.Text = staff.Salary.ToString();
                 txt_anh.Text = staffServices.listStaffs().Where(s => s.Id == txt_maNhanVien.Text).Select(s => s.ImageUrl).FirstOrDefault() ?? string.Empty;
-                picture_nhanVien.Image = Image.FromFile(txt_anh.Text);
+               /* picture_nhanVien.Image = Image.FromFile(txt_anh.Text);*/
             }
 
             btn_suaNhanVien.Enabled = true;
@@ -222,6 +229,12 @@ namespace HRMAPP
                     txt_email.Focus();
                 }
             }
+            if (string.IsNullOrEmpty(txt_matKhau.Text))
+            {
+                MessageBox.Show("Bạn cần phải nhập mật khẩu cho nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txt_matKhau.Focus();
+                return;
+            }
             if (txt_luong.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn cần phải nhập lương cho nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -241,6 +254,12 @@ namespace HRMAPP
                 txt_maNhanVien.Text = "";
                 return;
             }
+            if (string.IsNullOrEmpty(combox_Role.Text))
+            {
+                MessageBox.Show("Chức vụ không được để trống.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                combox_Role.Focus();
+                return;
+            }
             staff s = new staff
             {
                 Id = txt_maNhanVien.Text,
@@ -253,6 +272,8 @@ namespace HRMAPP
                 Salary = (float)Convert.ToDouble(txt_luong.Text),
                 DateBirth = date_ngaySinh.Value,
                 ImageUrl = txt_anh.Text,
+                Password = txt_matKhau.Text,
+                Role=combox_Role.Text
             };
             staffServices.insertStaff(s);
             LoadDataGridView();
@@ -271,6 +292,12 @@ namespace HRMAPP
             if (dgv_nhanVien.Rows.Count == 0)
             {
                 MessageBox.Show("Không còn dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (string.IsNullOrEmpty(txt_matKhau.Text))
+            {
+                MessageBox.Show("Bạn cần phải nhập mật khẩu cho nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txt_matKhau.Focus();
                 return;
             }
             if (txt_maNhanVien.Text == "")
@@ -332,6 +359,12 @@ namespace HRMAPP
                 btn_mo.Focus();
                 return;
             }
+            if (string.IsNullOrEmpty(combox_Role.Text))
+            {
+                MessageBox.Show("Chức vụ không được để trống.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                combox_Role.Focus();
+                return;
+            }
             staff s = new staff();
             s.Id = txt_maNhanVien.Text;
             s.Email = txt_email.Text;
@@ -343,7 +376,8 @@ namespace HRMAPP
             s.Salary = (float)Convert.ToDouble(txt_luong.Text);
             s.DateBirth = date_ngaySinh.Value;
             s.ImageUrl = txt_anh.Text;
-
+            s.Password = txt_matKhau.Text;
+            s.Role = combox_Role.Text;
             staffServices.updateStaff(s);
             LoadDataGridView();
             resetValue();
@@ -354,6 +388,11 @@ namespace HRMAPP
 
         private void btn_xoaNhanVien_Click(object sender, EventArgs e)
         {
+            if (combox_Role.Text.Equals("manager"))
+            {
+                MessageBox.Show("Không thể xóa quản lí.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             if (dgv_nhanVien.Columns.Count == 0)
             {
                 MessageBox.Show("Không còn dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

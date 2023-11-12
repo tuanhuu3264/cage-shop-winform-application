@@ -228,6 +228,9 @@ namespace BusinessObject.Models
                     .HasColumnName("phone");
 
                 entity.Property(e => e.Salary).HasColumnName("salary");
+                entity.Property(e => e.Password)
+                    .HasMaxLength(50)
+                    .HasColumnName("Password");
             });
 
             OnModelCreatingPartial(modelBuilder);

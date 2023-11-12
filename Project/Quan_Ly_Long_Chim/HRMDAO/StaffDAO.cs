@@ -57,5 +57,11 @@ namespace HRMDAO
                 db.SaveChanges();
             }
         }
+        public staff CheckLogin(string email, string password)
+        {
+            using var db = new CAGE_SHOPContext();
+            var staff = db.staff.AsEnumerable().SingleOrDefault(m => m.Email.ToLower().Trim().Equals(email.Trim().ToLower())&&m.Password.Equals(password)) ;
+            return staff;
+        }
     }
 }

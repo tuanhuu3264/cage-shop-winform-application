@@ -43,7 +43,9 @@ CREATE TABLE nhanVien (
     gioiTinh NVARCHAR(10) NOT NULL,
     diaChi NVARCHAR(50) NOT NULL,
     dienThoai NVARCHAR(50) NOT NULL,
-    ngaySinh DATETIME NOT NULL
+    ngaySinh DATETIME NOT NULL,
+	Password NVARCHAR(50) NOT NULL,
+	Role nvarchar(max) NOT NULL
 );
 GO
 

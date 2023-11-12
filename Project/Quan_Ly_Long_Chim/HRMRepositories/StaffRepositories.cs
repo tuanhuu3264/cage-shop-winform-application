@@ -23,5 +23,6 @@ namespace HRMRepositories
 
         public void updateStaff(staff s)
         => StaffDAO.Instance.updateStaff(s);
+        public staff checkLogin(string email, string password) => StaffDAO.Instance.CheckLogin(email,password);
     }
 }

@@ -13,7 +13,7 @@ CREATE TABLE Product(
     type NVARCHAR(15),
     imageUrl NVARCHAR(MAX),
     price_import MONEY,
-    price MONEY,
+    price double,
     quantity INT,
     description NVARCHAR(MAX),
     idMaterial NVARCHAR(6) REFERENCES Material(id)
@@ -34,7 +34,7 @@ CREATE TABLE Staff(
     address NVARCHAR(MAX),
     gender NVARCHAR(6),
     dateWork DATE,
-    salary MONEY,
+    salary float,
     dateBirth DATE,
     Password NVARCHAR(50) NOT NULL,
 	Role nvarchar(max) NOT NULL
@@ -43,7 +43,7 @@ CREATE TABLE Staff(
 CREATE TABLE Orders(
     id NVARCHAR(6) PRIMARY KEY,
     dateBuy DATE,
-    total MONEY,
+    total float,
     receiver NVARCHAR(MAX),
     address NVARCHAR(MAX),
     phonenumber NVARCHAR(11),
@@ -55,7 +55,7 @@ CREATE TABLE Order_Product(
     idProduct NVARCHAR(6) REFERENCES Product(id),
     idOrder NVARCHAR(6) REFERENCES Orders(id),
     quantity INT,
-    price MONEY
+    price float
 );
 
 CREATE TABLE Report(

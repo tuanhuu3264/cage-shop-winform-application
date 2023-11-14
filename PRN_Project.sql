@@ -28,7 +28,6 @@ CREATE TABLE Customer(
 CREATE TABLE Staff(
     id NVARCHAR(6) PRIMARY KEY,
     email NVARCHAR(MAX),
-    role NVARCHAR(10),
     imageUrl NVARCHAR(MAX),
     phone NVARCHAR(11),
     name NVARCHAR(100),
@@ -36,7 +35,9 @@ CREATE TABLE Staff(
     gender NVARCHAR(6),
     dateWork DATE,
     salary MONEY,
-    dateBirth DATE
+    dateBirth DATE,
+    Password NVARCHAR(50) NOT NULL,
+	Role nvarchar(max) NOT NULL
 );
 
 CREATE TABLE Orders(

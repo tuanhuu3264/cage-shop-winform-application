@@ -59,6 +59,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -124,6 +128,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "ExcelLibrary": {
+              "target": "Package",
+              "version": "[1.2011.7.31, )"
+            },
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[12.0.4518.1014, )"
+            },
             "WinForms.DataVisualization": {
               "target": "Package",
               "version": "[1.9.1, )"

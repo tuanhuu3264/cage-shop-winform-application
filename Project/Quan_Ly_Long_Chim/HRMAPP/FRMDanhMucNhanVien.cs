@@ -135,7 +135,7 @@ namespace HRMAPP
                 date_ngayLam.Value = (DateTime)staff.DateWork;
                 txt_luong.Text = staff.Salary.ToString();
                 txt_anh.Text = staffServices.listStaffs().Where(s => s.Id == txt_maNhanVien.Text).Select(s => s.ImageUrl).FirstOrDefault() ?? string.Empty;
-               /* picture_nhanVien.Image = Image.FromFile(txt_anh.Text);*/
+                picture_nhanVien.Image = Image.FromFile(txt_anh.Text);
             }
 
             btn_suaNhanVien.Enabled = true;

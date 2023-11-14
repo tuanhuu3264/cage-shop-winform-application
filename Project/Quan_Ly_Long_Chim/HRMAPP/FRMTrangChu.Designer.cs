@@ -69,7 +69,7 @@
             thoátToolStripMenuItem.Image = (Image)resources.GetObject("thoátToolStripMenuItem.Image");
             thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             thoátToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.F4;
-            thoátToolStripMenuItem.Size = new Size(224, 26);
+            thoátToolStripMenuItem.Size = new Size(183, 26);
             thoátToolStripMenuItem.Text = "&Thoát";
             // 
             // danhMụcToolStripMenuItem
@@ -160,7 +160,7 @@
             // thốngKêToolStripMenuItem
             // 
             thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            thốngKêToolStripMenuItem.Size = new Size(224, 26);
+            thốngKêToolStripMenuItem.Size = new Size(157, 26);
             thốngKêToolStripMenuItem.Text = "Thống kê";
             thốngKêToolStripMenuItem.Click += thốngKêToolStripMenuItem_Click;
             // 
@@ -174,7 +174,7 @@
             ClientSize = new Size(1125, 803);
             Controls.Add(menuStrip1);
             DoubleBuffered = true;
-            ForeColor = SystemColors.Control;
+            ForeColor = SystemColors.Desktop;
             Name = "FRMTrangChu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";

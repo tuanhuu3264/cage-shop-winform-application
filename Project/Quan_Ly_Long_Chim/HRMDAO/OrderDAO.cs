@@ -33,6 +33,13 @@ namespace HRMDAO
             var temp = db.Orders.Include(c => c.IdCustomerNavigation).Include(c => c.IdStaffNavigation).ToList();
             return temp;
         }
+        public Order getById(string id)
+        {
+            if (id == null) return null;
+            using var db = new CAGE_SHOPContext();
+            var temp = db.Orders.Include(c => c.IdCustomerNavigation).Include(c => c.IdStaffNavigation).SingleOrDefault(m=>m.Id.Equals(id));
+            return temp;
+        }
         public bool checkIdOrder(string id)
         {
             var temp = listOrders().FirstOrDefault(m => m.Id == id);

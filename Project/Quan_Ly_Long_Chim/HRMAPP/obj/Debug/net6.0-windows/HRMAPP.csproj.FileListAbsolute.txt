@@ -204,3 +204,10 @@ C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\obj\Debug\net6.0-windows\HRMAPP.genruntimeconfig.cache
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\obj\Debug\net6.0-windows\ref\HRMAPP.dll
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\obj\Debug\net6.0-windows\HRMAPP.FRMLogin.resources
+C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Excel.dll
+C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\ExcelLibrary.dll

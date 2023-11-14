@@ -14,7 +14,8 @@ namespace HRMRepositories
          bool checkIdOrder(string id);
          void insertOrder(Order order);
          void updateTotalOrder(double newTotal, string id);
-
+          
+         Order getById(string id);
          void deleteOrder(string id);
         int GetNumberOrderByDay(int day, int month, int year);
         int GetNumberOrderByMonth(int month, int year);

@@ -16,6 +16,8 @@ namespace HRMRepositories
         public void deleteOrder(string id)
         => OrderDAO.Instance.deleteOrder(id);
 
+        public Order getById(string id)=>OrderDAO.Instance.getById(id);
+
         public int GetNumberOrderByDay(int day, int month, int year)=>OrderDAO.Instance.GetNumberOrderByDay(day, month, year);
 
         public int GetNumberOrderByMonth(int month, int year)=>OrderDAO.Instance.GetNumberOrderByMonth(month, year);

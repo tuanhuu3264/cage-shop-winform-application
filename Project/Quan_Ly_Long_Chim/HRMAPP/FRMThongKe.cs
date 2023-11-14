@@ -67,6 +67,7 @@ namespace BirdManageShop
         private void LoadChartPieTypeProduct()
         {
             var topTypeProducts = _orderProductService.GetTopTypeProduct(DateTime.Now.Month, DateTime.Now.Year);
+
             Series series1 = new Series("Năm nay");
             series1.ChartType = SeriesChartType.Pie;
 
@@ -82,26 +83,28 @@ namespace BirdManageShop
 
             chart_TopTypeOfProduct.Series.Add(series1);
 
+
             ChartArea chartArea1 = new ChartArea();
             chart_TopTypeOfProduct.ChartAreas.Add(chartArea1);
 
+     
             chart_TopTypeOfProduct.Titles.Add("Tỉ lệ phần trăm loại sản phẩm bán được trong tháng nay");
 
             Legend legend = new Legend("Legend");
             legend.Docking = Docking.Bottom;
+            legend.Enabled = true;
 
             foreach (var point in series1.Points)
             {
-                LegendItem legendItem = new LegendItem
-                {
-                    Name = point.AxisLabel,
-                    Color = point.Color
-                };
+                LegendItem legendItem = new LegendItem();
+                legendItem.Name = point.AxisLabel;
+                legendItem.Color = point.Color;
 
                 legend.CustomItems.Add(legendItem);
             }
 
             chart_TopTypeOfProduct.Legends.Add(legend);
+
             chart_TopTypeOfProduct.TextAntiAliasingQuality = TextAntiAliasingQuality.SystemDefault;
 
             Controls.Add(chart_TopTypeOfProduct);

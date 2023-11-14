@@ -156,5 +156,10 @@ namespace HRMAPP
         {
 
         }
+
+        private void dgv_hoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -62,7 +62,7 @@
             chart_DoanhThu.Legends.Add(legend1);
             chart_DoanhThu.Location = new Point(3, 12);
             chart_DoanhThu.Name = "chart_DoanhThu";
-            chart_DoanhThu.Size = new Size(491, 330);
+            chart_DoanhThu.Size = new Size(491, 437);
             chart_DoanhThu.TabIndex = 0;
             chart_DoanhThu.Text = "chart1";
             // 
@@ -70,7 +70,7 @@
             // 
             chart_TopTypeOfProduct.Location = new Point(500, 12);
             chart_TopTypeOfProduct.Name = "chart_TopTypeOfProduct";
-            chart_TopTypeOfProduct.Size = new Size(410, 330);
+            chart_TopTypeOfProduct.Size = new Size(410, 437);
             chart_TopTypeOfProduct.TabIndex = 1;
             chart_TopTypeOfProduct.Text = "chart1";
             // 
@@ -82,7 +82,7 @@
             groupBox1.Controls.Add(grpBox_Revenue);
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox1.ForeColor = SystemColors.ButtonHighlight;
-            groupBox1.Location = new Point(3, 348);
+            groupBox1.Location = new Point(3, 466);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(257, 249);
             groupBox1.TabIndex = 2;
@@ -152,7 +152,7 @@
             groupBox7.Controls.Add(label_TotalProductInStock);
             groupBox7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox7.ForeColor = SystemColors.ButtonHighlight;
-            groupBox7.Location = new Point(266, 348);
+            groupBox7.Location = new Point(266, 466);
             groupBox7.Name = "groupBox7";
             groupBox7.Size = new Size(228, 77);
             groupBox7.TabIndex = 3;
@@ -175,7 +175,7 @@
             groupBox6.Controls.Add(label_NumberProductTSold);
             groupBox6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox6.ForeColor = SystemColors.ButtonHighlight;
-            groupBox6.Location = new Point(266, 431);
+            groupBox6.Location = new Point(266, 549);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(228, 78);
             groupBox6.TabIndex = 2;
@@ -207,7 +207,7 @@
             groupBox2.Controls.Add(label_NewCustomer);
             groupBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox2.ForeColor = SystemColors.ButtonHighlight;
-            groupBox2.Location = new Point(266, 515);
+            groupBox2.Location = new Point(266, 633);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(228, 82);
             groupBox2.TabIndex = 7;
@@ -226,18 +226,18 @@
             // 
             // chart_TopProduct
             // 
-            chart_TopProduct.Location = new Point(500, 348);
+            chart_TopProduct.Location = new Point(500, 466);
             chart_TopProduct.Name = "chart_TopProduct";
             chart_TopProduct.Size = new Size(410, 249);
             chart_TopProduct.TabIndex = 8;
             chart_TopProduct.Text = "chart1";
             chart_TopProduct.Click += chart_TopProduct_Click;
             // 
-            // Thong_Ke
+            // FRMThongKe
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(922, 601);
+            ClientSize = new Size(922, 712);
             Controls.Add(chart_TopProduct);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -245,7 +245,7 @@
             Controls.Add(groupBox7);
             Controls.Add(chart_TopTypeOfProduct);
             Controls.Add(chart_DoanhThu);
-            Name = "Thong_Ke";
+            Name = "FRMThongKe";
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)chart_DoanhThu).EndInit();

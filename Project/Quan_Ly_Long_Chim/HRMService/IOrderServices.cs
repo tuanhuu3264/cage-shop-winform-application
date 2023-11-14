@@ -10,6 +10,7 @@ namespace HRMService
     public interface IOrderServices
     {
          List<Order> listOrders();
+        Order getById(string id);
 
          bool checkIdOrder(string id);
          void insertOrder(Order order);

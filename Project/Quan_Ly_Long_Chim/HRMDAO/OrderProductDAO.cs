@@ -1,6 +1,7 @@
 ﻿using BusinessObject.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System.Data;
 
 namespace HRMDAO
@@ -39,9 +40,21 @@ namespace HRMDAO
 
             return temp;
         }
+
+        protected string GetConnectionString()
+        {
+            string appSettingsPath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "appsettings.json");
+
+            var builder = new ConfigurationBuilder().AddJsonFile(appSettingsPath, optional: false);
+
+            IConfiguration configuration = builder.Build();
+            return configuration.GetConnectionString("DBDefault");
+        }
+
+
         public void insertOrderProduct(OrderProduct orderProduct)
         {
-            string connectionString = "Server=DESKTOP-R23TMQS\\ALEX;Database=CAGE_SHOP;Trusted_Connection=True; TrustServerCertificate=True";
+            string connectionString = GetConnectionString();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -79,7 +92,7 @@ namespace HRMDAO
         }
         public void deleteOrderProduct(string idOrder)
         {
-            string connectionString = "Server=DESKTOP-R23TMQS\\ALEX;Database=CAGE_SHOP;Trusted_Connection=True; TrustServerCertificate=True";
+            string connectionString = GetConnectionString();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -106,7 +119,7 @@ namespace HRMDAO
         }
         public void deleteOrderProductByIdOrderAndIdProduct(string idOrder, string idProduct)
         {
-            string connectionString = "Server=DESKTOP-R23TMQS\\ALEX;Database=CAGE_SHOP;Trusted_Connection=True; TrustServerCertificate=True";
+            string connectionString = GetConnectionString();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();

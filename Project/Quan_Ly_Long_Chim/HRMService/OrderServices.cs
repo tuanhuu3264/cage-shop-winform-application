@@ -24,6 +24,11 @@ namespace HRMService
             orderRepositories.deleteOrder(id);
         }
 
+        public Order getById(string id)
+        {
+            return (orderRepositories.getById(id));
+        }
+
         public int GetNumberOrderByDay(int day, int month, int year)
         {
             return orderRepositories.GetNumberOrderByDay(day, month, year);

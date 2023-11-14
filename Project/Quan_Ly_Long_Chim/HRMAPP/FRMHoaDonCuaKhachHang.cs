@@ -197,5 +197,10 @@ namespace HRMAPP
         {
             Search();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

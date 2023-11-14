@@ -352,7 +352,7 @@ namespace HRMAPP
                 txt_donGia.Text = dgv_hang.Rows[index].Cells["PriceImport"].Value.ToString();
                 txt_donBan.Text = dgv_hang.Rows[index].Cells["PriceExport"].Value.ToString(); ;
                 txt_anh.Text = dgv_hang.Rows[index].Cells["ImageUrl"].Value.ToString(); ;
-                picture_hang.Image = Image.FromFile(txt_anh.Text);
+                /*picture_hang.Image = Image.FromFile(txt_anh.Text);*/
                 txt_tenChatLieu.Text = typeProductServices.listTypeProduct().Where(t => t.Id == cbo_maChatLieu.Text).Select(t => t.Name).FirstOrDefault();
                 txt_ghiChu.Text = dgv_hang.Rows[index].Cells["Description"].Value.ToString(); ;
             }

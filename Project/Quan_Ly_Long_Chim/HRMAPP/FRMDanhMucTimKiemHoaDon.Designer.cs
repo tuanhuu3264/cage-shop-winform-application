@@ -245,6 +245,7 @@
             dgv_hoaDon.RowTemplate.Height = 29;
             dgv_hoaDon.Size = new Size(1125, 375);
             dgv_hoaDon.TabIndex = 2;
+            dgv_hoaDon.CellContentClick += dgv_hoaDon_CellContentClick;
             // 
             // FRMDanhMucTimKiemHoaDon
             // 

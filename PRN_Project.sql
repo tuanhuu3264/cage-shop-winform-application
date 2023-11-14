@@ -12,8 +12,8 @@ CREATE TABLE Product(
     name NVARCHAR(100),
     type NVARCHAR(15),
     imageUrl NVARCHAR(MAX),
-    price_import MONEY,
-    price double,
+    price_import float,
+    price float,
     quantity INT,
     description NVARCHAR(MAX),
     idMaterial NVARCHAR(6) REFERENCES Material(id)

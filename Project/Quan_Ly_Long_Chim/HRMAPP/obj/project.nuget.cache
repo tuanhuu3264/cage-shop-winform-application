@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "KQ2O6iZ4bOcOnOg5jwG/Khmexv34qlvWxvLRT0WvvuIteFa0sV+Op37n5591Xv8Mn3vJ+FUN15zBHxRpmGyoeA==",
+  "dgSpecHash": "64mRHOJ4b58Wbu0gvqcEQfkAbAJKfRN7hl/TuU5OOnGXGF/sg3vtxmTYACybBPsxBgo6LytS/fK7GBUxrUOGwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMAPP\\HRMAPP.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\BIN\\.nuget\\packages\\excellibrary\\1.2011.7.31\\excellibrary.1.2011.7.31.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
@@ -57,16 +56,6 @@
     "C:\\Users\\BIN\\.nuget\\packages\\winforms.datavisualization\\1.9.1\\winforms.datavisualization.1.9.1.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ExcelLibrary 1.2011.7.31' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "ExcelLibrary",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",

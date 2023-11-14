@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "ExcelLibrary/1.2011.7.31": {
-        "runtime": {
-          "lib/ExcelLibrary.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Data.SqlClient/2.1.4": {
         "dependencies": {
@@ -687,13 +679,6 @@
     }
   },
   "libraries": {
-    "ExcelLibrary/1.2011.7.31": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ogX1mzqe1Ek3Z0AdER4B4QBJoBkt90Mfe0LnyiPg/uP+iZ7rx+9fFXbsZjOlPsS0xNn8sFeesvNnfEnuthudrQ==",
-      "path": "excellibrary/1.2011.7.31",
-      "hashPath": "excellibrary.1.2011.7.31.nupkg.sha512"
-    },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,

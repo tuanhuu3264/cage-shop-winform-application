@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "ExcelLibrary/1.2011.7.31": {
-        "type": "package",
-        "compile": {
-          "lib/ExcelLibrary.dll": {}
-        },
-        "runtime": {
-          "lib/ExcelLibrary.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -992,18 +983,6 @@
     }
   },
   "libraries": {
-    "ExcelLibrary/1.2011.7.31": {
-      "sha512": "ogX1mzqe1Ek3Z0AdER4B4QBJoBkt90Mfe0LnyiPg/uP+iZ7rx+9fFXbsZjOlPsS0xNn8sFeesvNnfEnuthudrQ==",
-      "type": "package",
-      "path": "excellibrary/1.2011.7.31",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "excellibrary.1.2011.7.31.nupkg.sha512",
-        "excellibrary.nuspec",
-        "lib/ExcelLibrary.dll"
-      ]
-    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -2448,7 +2427,6 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "BusinessObject >= 1.0.0",
-      "ExcelLibrary >= 1.2011.7.31",
       "HRMService >= 1.0.0",
       "Microsoft.Office.Interop.Excel >= 12.0.4518.1014",
       "WinForms.DataVisualization >= 1.9.1"
@@ -2500,10 +2478,6 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "ExcelLibrary": {
-            "target": "Package",
-            "version": "[1.2011.7.31, )"
-          },
           "Microsoft.Office.Interop.Excel": {
             "target": "Package",
             "version": "[12.0.4518.1014, )"
@@ -2537,16 +2511,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ExcelLibrary 1.2011.7.31' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "ExcelLibrary",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",

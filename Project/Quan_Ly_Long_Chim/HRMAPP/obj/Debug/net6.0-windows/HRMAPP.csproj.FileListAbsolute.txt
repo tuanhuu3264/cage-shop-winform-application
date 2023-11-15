@@ -181,7 +181,6 @@ C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\HRMDAO.pdb
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\HRMRepositories.pdb
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\obj\Debug\net6.0-windows\HRMAPP.csproj.AssemblyReference.cache
-C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\obj\Debug\net6.0-windows\HRMAPP.csproj.ResolveComReference.cache
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\obj\Debug\net6.0-windows\HRMAPP.FRMDanhMucChatLieu.resources
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\obj\Debug\net6.0-windows\HRMAPP.FRMDanhMucHangHoa.resources
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\obj\Debug\net6.0-windows\HRMAPP.FRMDanhMucKhachHang.resources
@@ -209,5 +208,3 @@ C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
-C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Excel.dll
-C:\Users\BIN\Desktop\Lab_2_Prn\NewProject\cage-shop-winform-application\Project\Quan_Ly_Long_Chim\HRMAPP\bin\Debug\net6.0-windows\ExcelLibrary.dll

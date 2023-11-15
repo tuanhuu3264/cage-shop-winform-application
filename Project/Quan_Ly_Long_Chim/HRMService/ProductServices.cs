@@ -39,7 +39,7 @@ namespace HRMService
             productRepositories.insertProduct(product);
         }
 
-        public List<Product> listProducts()
+        public IEnumerable<Product> listProducts()
         {
             return productRepositories.listProducts();
         }

@@ -125,7 +125,7 @@ namespace HRMAPP
                 {
                     radio_nu.Checked = true;
                 }
-                
+                txt_email.Enabled = false;
                 combox_Role.Text = staff.Role;
                 txt_matKhau.Text = staff.Password;
                 txt_email.Text = staff.Email;
@@ -170,6 +170,7 @@ namespace HRMAPP
             txt_luong.Enabled = true;
             txt_bangChu.Enabled = false;
             txt_diaChi.Enabled = true;
+            txt_email.Enabled = true;
             masked_dienThoaiNhanVien.Enabled = true;
             resetValue();
             txt_maNhanVien.Enabled = true;
@@ -381,6 +382,7 @@ namespace HRMAPP
             staffServices.updateStaff(s);
             LoadDataGridView();
             resetValue();
+            txt_email.Enabled = false;
             btn_boQua.Enabled = false;
             btn_suaNhanVien.Enabled = false;
             btn_xoaNhanVien.Enabled = false;
@@ -429,6 +431,7 @@ namespace HRMAPP
             btn_xoaNhanVien.Enabled = false;
             btn_luuNhanVien.Enabled = false;
             txt_maNhanVien.Enabled = false;
+            txt_email.Enabled = false;
         }
 
         private void txt_luong_TextChanged(object sender, EventArgs e)

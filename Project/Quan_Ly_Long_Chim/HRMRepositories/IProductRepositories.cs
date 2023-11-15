@@ -9,7 +9,7 @@ namespace HRMRepositories
 {
     public interface IProductRepositories
     {
-         List<Product> listProducts();
+         IEnumerable<Product> listProducts();
 
          Product GetProduct(string id);
 

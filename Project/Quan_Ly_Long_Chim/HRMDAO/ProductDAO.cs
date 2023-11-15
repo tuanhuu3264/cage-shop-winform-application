@@ -25,7 +25,7 @@ namespace HRMDAO
                 return instance;
             }
         }
-        public List<Product> listProducts()
+        public IEnumerable<Product> listProducts()
         {
             using var db = new CAGE_SHOPContext();
             return db.Products.Include(c => c.IdTypeProductNavigation).ToList();

@@ -24,7 +24,7 @@ namespace HRMRepositories
         public void insertProduct(Product product)
         => ProductDAO.Instance.insertProduct(product);
 
-        public List<Product> listProducts()
+        public IEnumerable<Product> listProducts()
         => ProductDAO.Instance.listProducts();
 
         public void updateProduct(Product product)

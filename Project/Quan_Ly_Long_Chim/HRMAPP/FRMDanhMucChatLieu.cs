@@ -34,7 +34,11 @@ namespace HRMAPP
         private void LoadDataGridView()
         {
             BindingSource source = new BindingSource();
-            source.DataSource = typeProductService.listTypeProduct();
+            source.DataSource = typeProductService.listTypeProduct().Select(m => new
+            {
+                m.Id,
+                m.Name
+            });
             dgv_chatLieu.DataSource = null;
             dgv_chatLieu.DataSource = source;
             dgv_chatLieu.Columns[0].HeaderText = "Mã chất liệu";

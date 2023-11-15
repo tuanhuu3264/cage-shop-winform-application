@@ -357,14 +357,6 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
-      "Microsoft.Office.Interop.Excel/12.0.4518.1014": {
-        "runtime": {
-          "lib/net20/Microsoft.Office.Interop.Excel.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.4518.1014"
-          }
-        }
-      },
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
@@ -888,13 +880,6 @@
       "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "path": "microsoft.netcore.platforms/3.1.0",
       "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
-    },
-    "Microsoft.Office.Interop.Excel/12.0.4518.1014": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-d1Cl9PoL5h0WLinxwJ68ZZ26P+6vjCIN0UMqPCEVKe3v/CQLxH4Ij/Fy4in4LK2bYZlzE2bx7j8xSQ6YqK1Vpw==",
-      "path": "microsoft.office.interop.excel/12.0.4518.1014",
-      "hashPath": "microsoft.office.interop.excel.12.0.4518.1014.nupkg.sha512"
     },
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",

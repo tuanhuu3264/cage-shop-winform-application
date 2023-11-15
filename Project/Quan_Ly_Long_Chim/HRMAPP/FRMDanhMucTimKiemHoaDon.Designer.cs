@@ -31,13 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMDanhMucTimKiemHoaDon));
             panel1 = new Panel();
             button1 = new Button();
-            txt_tongTien = new TextBox();
             txt_nam = new TextBox();
             txt_thang = new TextBox();
             cbo_maNhanVien = new ComboBox();
             cbo_maKhachHang = new ComboBox();
             cbo_maHoaDon = new ComboBox();
-            label7 = new Label();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
@@ -56,13 +54,11 @@
             // panel1
             // 
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(txt_tongTien);
             panel1.Controls.Add(txt_nam);
             panel1.Controls.Add(txt_thang);
             panel1.Controls.Add(cbo_maNhanVien);
             panel1.Controls.Add(cbo_maKhachHang);
             panel1.Controls.Add(cbo_maHoaDon);
-            panel1.Controls.Add(label7);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
@@ -72,7 +68,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1125, 262);
+            panel1.Size = new Size(1125, 215);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -85,19 +81,13 @@
             button1.TabIndex = 27;
             button1.UseVisualStyleBackColor = true;
             // 
-            // txt_tongTien
-            // 
-            txt_tongTien.Location = new Point(774, 148);
-            txt_tongTien.Name = "txt_tongTien";
-            txt_tongTien.Size = new Size(321, 27);
-            txt_tongTien.TabIndex = 13;
-            // 
             // txt_nam
             // 
             txt_nam.Location = new Point(423, 147);
             txt_nam.Name = "txt_nam";
             txt_nam.Size = new Size(122, 27);
             txt_nam.TabIndex = 12;
+            txt_nam.KeyPress += txt_nam_KeyPress;
             // 
             // txt_thang
             // 
@@ -105,11 +95,12 @@
             txt_thang.Name = "txt_thang";
             txt_thang.Size = new Size(122, 27);
             txt_thang.TabIndex = 11;
+            txt_thang.KeyPress += txt_thang_KeyPress;
             // 
             // cbo_maNhanVien
             // 
             cbo_maNhanVien.FormattingEnabled = true;
-            cbo_maNhanVien.Location = new Point(224, 198);
+            cbo_maNhanVien.Location = new Point(774, 148);
             cbo_maNhanVien.Name = "cbo_maNhanVien";
             cbo_maNhanVien.Size = new Size(321, 28);
             cbo_maNhanVien.TabIndex = 10;
@@ -129,16 +120,6 @@
             cbo_maHoaDon.Name = "cbo_maHoaDon";
             cbo_maHoaDon.Size = new Size(321, 28);
             cbo_maHoaDon.TabIndex = 8;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(667, 146);
-            label7.Name = "label7";
-            label7.Size = new Size(101, 25);
-            label7.TabIndex = 7;
-            label7.Text = "Tổng tiền :";
             // 
             // label6
             // 
@@ -164,7 +145,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(82, 197);
+            label4.Location = new Point(632, 147);
             label4.Name = "label4";
             label4.Size = new Size(136, 25);
             label4.TabIndex = 4;
@@ -239,11 +220,11 @@
             // 
             dgv_hoaDon.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_hoaDon.Dock = DockStyle.Fill;
-            dgv_hoaDon.Location = new Point(0, 262);
+            dgv_hoaDon.Location = new Point(0, 215);
             dgv_hoaDon.Name = "dgv_hoaDon";
             dgv_hoaDon.RowHeadersWidth = 51;
             dgv_hoaDon.RowTemplate.Height = 29;
-            dgv_hoaDon.Size = new Size(1125, 375);
+            dgv_hoaDon.Size = new Size(1125, 422);
             dgv_hoaDon.TabIndex = 2;
             dgv_hoaDon.CellContentClick += dgv_hoaDon_CellContentClick;
             // 

@@ -68,7 +68,6 @@
             btn_luuHoaDon = new Button();
             btn_themHoaDon = new Button();
             btn_huyHoaDon = new Button();
-            btn_inHoaDon = new Button();
             btn_luuHangHoa = new Button();
             btn_suaHangHoa = new Button();
             btn_xoaHangHoa = new Button();
@@ -419,11 +418,11 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new Font("Berlin Sans FB", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label16.ForeColor = Color.Red;
             label16.Location = new Point(9, 11);
             label16.Name = "label16";
-            label16.Size = new Size(201, 18);
+            label16.Size = new Size(209, 18);
             label16.TabIndex = 17;
             label16.Text = "Nháy đúp một dòng để xóa";
             // 
@@ -443,7 +442,6 @@
             panel7.Controls.Add(btn_luuHoaDon);
             panel7.Controls.Add(btn_themHoaDon);
             panel7.Controls.Add(btn_huyHoaDon);
-            panel7.Controls.Add(btn_inHoaDon);
             panel7.Controls.Add(btn_luuHangHoa);
             panel7.Controls.Add(btn_suaHangHoa);
             panel7.Controls.Add(btn_xoaHangHoa);
@@ -458,7 +456,7 @@
             // 
             btn_boQua.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_boQua.Image = (Image)resources.GetObject("btn_boQua.Image");
-            btn_boQua.Location = new Point(746, 107);
+            btn_boQua.Location = new Point(657, 107);
             btn_boQua.Name = "btn_boQua";
             btn_boQua.Size = new Size(172, 61);
             btn_boQua.TabIndex = 9;
@@ -471,7 +469,7 @@
             // 
             btn_dong.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_dong.Image = (Image)resources.GetObject("btn_dong.Image");
-            btn_dong.Location = new Point(924, 107);
+            btn_dong.Location = new Point(835, 107);
             btn_dong.Name = "btn_dong";
             btn_dong.Size = new Size(172, 61);
             btn_dong.TabIndex = 8;
@@ -484,7 +482,7 @@
             // 
             btn_luuHoaDon.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_luuHoaDon.Image = (Image)resources.GetObject("btn_luuHoaDon.Image");
-            btn_luuHoaDon.Location = new Point(212, 107);
+            btn_luuHoaDon.Location = new Point(301, 107);
             btn_luuHoaDon.Name = "btn_luuHoaDon";
             btn_luuHoaDon.Size = new Size(172, 61);
             btn_luuHoaDon.TabIndex = 7;
@@ -497,7 +495,7 @@
             // 
             btn_themHoaDon.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_themHoaDon.Image = (Image)resources.GetObject("btn_themHoaDon.Image");
-            btn_themHoaDon.Location = new Point(34, 107);
+            btn_themHoaDon.Location = new Point(123, 107);
             btn_themHoaDon.Name = "btn_themHoaDon";
             btn_themHoaDon.Size = new Size(172, 61);
             btn_themHoaDon.TabIndex = 6;
@@ -510,7 +508,7 @@
             // 
             btn_huyHoaDon.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_huyHoaDon.Image = (Image)resources.GetObject("btn_huyHoaDon.Image");
-            btn_huyHoaDon.Location = new Point(390, 107);
+            btn_huyHoaDon.Location = new Point(479, 107);
             btn_huyHoaDon.Name = "btn_huyHoaDon";
             btn_huyHoaDon.Size = new Size(172, 61);
             btn_huyHoaDon.TabIndex = 5;
@@ -518,19 +516,6 @@
             btn_huyHoaDon.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_huyHoaDon.UseVisualStyleBackColor = true;
             btn_huyHoaDon.Click += btn_huyHoaDon_Click;
-            // 
-            // btn_inHoaDon
-            // 
-            btn_inHoaDon.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_inHoaDon.Image = (Image)resources.GetObject("btn_inHoaDon.Image");
-            btn_inHoaDon.Location = new Point(568, 107);
-            btn_inHoaDon.Name = "btn_inHoaDon";
-            btn_inHoaDon.Size = new Size(172, 61);
-            btn_inHoaDon.TabIndex = 4;
-            btn_inHoaDon.Text = "&In hóa đơn";
-            btn_inHoaDon.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btn_inHoaDon.UseVisualStyleBackColor = true;
-            btn_inHoaDon.Click += btn_inHoaDon_Click;
             // 
             // btn_luuHangHoa
             // 
@@ -775,7 +760,6 @@
         private Button btn_luuHoaDon;
         private Button btn_themHoaDon;
         private Button btn_huyHoaDon;
-        private Button btn_inHoaDon;
         private Button btn_luuHangHoa;
         private Button btn_suaHangHoa;
         private Button btn_xoaHangHoa;

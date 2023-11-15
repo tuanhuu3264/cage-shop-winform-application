@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using COMExcel = Microsoft.Office.Interop.Excel;
+
 
 namespace HRMAPP
 {
@@ -28,6 +28,7 @@ namespace HRMAPP
         List<Product> products = new List<Product>();
         List<Order> orders = new List<Order>();
         List<OrderProduct> orderProducts = new List<OrderProduct>();
+    
         public FRMHoaDonBanHang()
         {
             InitializeComponent();
@@ -36,6 +37,7 @@ namespace HRMAPP
             productServices = new ProductServices();
             customerServices = new CustomerServices();
             staffServices = new StaffServices();
+    
         }
         public delegate void DataPassHandler(string data);
         public event DataPassHandler DataPassed;
@@ -48,7 +50,7 @@ namespace HRMAPP
             btn_themHoaDon.Enabled = true;
             btn_luuHoaDon.Enabled = false;
             btn_huyHoaDon.Enabled = false;
-            btn_inHoaDon.Enabled = false;
+
             btn_boQua.Enabled = false;
             txt_maHD.Enabled = false;
             txt_tenNhanVien.Enabled = false;
@@ -74,7 +76,7 @@ namespace HRMAPP
             {
                 LoadInfoHoaDon();
                 btn_huyHoaDon.Enabled = true;
-                btn_inHoaDon.Enabled = true;
+         
             }
             loadDataGridView();
         }
@@ -161,7 +163,7 @@ namespace HRMAPP
         {
             btn_huyHoaDon.Enabled = false;
             btn_luuHoaDon.Enabled = true;
-            btn_inHoaDon.Enabled = false;
+   
             btn_themHoaDon.Enabled = false;
             btn_boQua.Enabled = true;
             cbo_maKhachHang.Enabled = true;
@@ -241,7 +243,7 @@ namespace HRMAPP
             ResetValuesHang();
             btn_huyHoaDon.Enabled = true;
             btn_themHoaDon.Enabled = false;
-            btn_inHoaDon.Enabled = true;
+   
             SendDataToForm2(txt_maHD.Text);
         }
 
@@ -346,6 +348,7 @@ namespace HRMAPP
                 return;
             }
             txt_maHD.Text = cbo_maHD.Text;
+            SendDataToForm2(txt_maHD.Text);
             LoadInfoHoaDon();
             loadDataGridView();
             txt_tenNhanVien.Text = staffServices.listStaffs()
@@ -362,7 +365,7 @@ namespace HRMAPP
                                                 .FirstOrDefault() ?? string.Empty;
             btn_huyHoaDon.Enabled = true;
             btn_luuHoaDon.Enabled = true;
-            btn_inHoaDon.Enabled = true;
+
             btn_themHoaDon.Enabled = false;
             btn_boQua.Enabled = true;
             cbo_maHD.SelectedIndex = -1;
@@ -408,10 +411,9 @@ namespace HRMAPP
                 orderServices.deleteOrder(txt_maHD.Text);
                 resetValues();
                 loadDataGridView();
-                SendDataToForm2(txt_maHD.Text);
                 dgv_thongTinHoaDon.DataSource = null;
                 btn_huyHoaDon.Enabled = false;
-                btn_inHoaDon.Enabled = false;
+   
                 btn_luuHoaDon.Enabled = false;
                 btn_themHoaDon.Enabled = true;
                 SendDataToForm2("Clean");
@@ -438,135 +440,7 @@ namespace HRMAPP
             else e.Handled = true;
         }
 
-        private void btn_inHoaDon_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_maHD.Text))
-            {
-                MessageBox.Show("Cần chọn một hóa đơn để in.");
-                return;
-            }
-
-            Microsoft.Office.Interop.Excel.Application exApp = new Microsoft.Office.Interop.Excel.Application();
-            Microsoft.Office.Interop.Excel.Workbook exBook = exApp.Workbooks.Add();
-            Microsoft.Office.Interop.Excel.Worksheet exSheet = (COMExcel.Worksheet)exBook.Worksheets[1];
-            Microsoft.Office.Interop.Excel.Range exRange;
-            string sql;
-            int hang = 0, cot = 0;
-            DataTable tblThongtinHang;
-
-            // Định dạng chung
-            exRange = (COMExcel.Range)exSheet.Cells[1, 1];
-            exRange.Range["A1:Z300"].Font.Name = "Times new roman"; // Font chữ
-            exRange.Range["A1:B3"].Font.Size = 10;
-            exRange.Range["A1:B3"].Font.Bold = true;
-            exRange.Range["A1:B3"].Font.ColorIndex = 5; // Màu xanh da trời
-            exRange.Range["A1:A1"].ColumnWidth = 7;
-            exRange.Range["B1:B1"].ColumnWidth = 15;
-            exRange.Range["A1:B1"].MergeCells = true;
-            exRange.Range["A1:B1"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-            exRange.Range["A1:B1"].Value = "SHOP VTT";
-            exRange.Range["A2:B2"].MergeCells = true;
-            exRange.Range["A2:B2"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-            exRange.Range["A2:B2"].Value = "Đại học FPT";
-            exRange.Range["A3:B3"].MergeCells = true;
-            exRange.Range["A3:B3"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-            exRange.Range["A3:B3"].Value = "Điện thoại: (033)2333005";
-            exRange.Range["C2:E2"].Font.Size = 16;
-            exRange.Range["C2:E2"].Font.Bold = true;
-            exRange.Range["C2:E2"].Font.ColorIndex = 3; // Màu đỏ
-            exRange.Range["C2:E2"].MergeCells = true;
-            exRange.Range["C2:E2"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-            exRange.Range["C2:E2"].Value = "HÓA ĐƠN BÁN";
-
-            // thông tin chung của hóa đơn bán
-            sql = "SELECT b.name, a.quantity, b.price_export, a.discount, a.total " +
-                  "FROM Order_Product AS a, Product AS b WHERE a.idOrder = N'" +
-                  txt_maHD.Text + "' AND a.idProduct = b.id";
-
-            Order order = orderServices.getById(txt_maHD.Text);
-            exRange.Range["B6:C9"].Font.Size = 12;
-            exRange.Range["B6:B6"].Value = "Mã hóa đơn:";
-            exRange.Range["C6:E6"].MergeCells = true;
-            exRange.Range["C6:E6"].Value = order.Id.ToString();
-            exRange.Range["B7:B7"].Value = "Khách hàng:";
-            exRange.Range["C7:E7"].MergeCells = true;
-            exRange.Range["C7:E7"].Value = order.IdCustomerNavigation.Name;
-            exRange.Range["B8:B8"].Value = "Địa chỉ:";
-            exRange.Range["C8:E8"].MergeCells = true;
-            exRange.Range["C8:E8"].Value = order.IdCustomerNavigation.Address;
-            exRange.Range["B9:B9"].Value = "Điện thoại:";
-            exRange.Range["C9:E9"].MergeCells = true;
-            exRange.Range["C9:E9"].Value = order.IdCustomerNavigation.Phone;
-
-            // Lấy thông tin các mặt hàng
-            tblThongtinHang = (DataTable)orderProductServices.listOrderProducts().Select(m => new
-            {
-                m.IdProductNavigation?.Name,
-                m.Quantity,
-                m.IdProductNavigation?.PriceExport,
-                m.Discount,
-                m.Total
-            });
-
-            exRange.Range["A11:F11"].Font.Bold = true;
-            exRange.Range["A11:F11"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-            exRange.Range["C11:F11"].ColumnWidth = 12;
-            exRange.Range["A11:A11"].Value = "STT";
-            exRange.Range["B11:B11"].Value = "Tên hàng";
-            exRange.Range["C11:C11"].Value = "Số lượng";
-            exRange.Range["D11:D11"].Value = "Đơn giá";
-            exRange.Range["E11:E11"].Value = "Giảm giá";
-            exRange.Range["F11:F11"].Value = "Thành tiền";
-
-            for (hang = 0; hang < tblThongtinHang.Rows.Count; hang++)
-            {
-                // Điền số thứ tự vào cột 1 từ dòng 12
-                exSheet.Cells[1, hang + 12] = hang + 1;
-                for (cot = 0; cot < tblThongtinHang.Columns.Count; cot++)
-                {
-                    // Điền thông tin hàng từ cột thứ 2, dòng 12
-                    if (cot == 3)
-                    {
-                        exSheet.Cells[cot + 2, hang + 12] = tblThongtinHang.Rows[hang][cot].ToString() + "%";
-                    }
-                    else
-                    {
-                        exSheet.Cells[cot + 2, hang + 12] = tblThongtinHang.Rows[hang][cot].ToString();
-                    }
-                }
-            }
-
-            exRange = (Microsoft.Office.Interop.Excel.Range)exSheet.Cells[cot, hang + 14];
-            exRange.Font.Bold = true;
-            exRange.Value2 = "Tổng tiền:";
-            exRange = (Microsoft.Office.Interop.Excel.Range)exSheet.Cells[cot + 1, hang + 14];
-            exRange.Font.Bold = true;
-            exRange.Value2 = order.Total.ToString();
-            exRange = (Microsoft.Office.Interop.Excel.Range)exSheet.Cells[1, hang + 15];
-            exRange.Range["A1:F1"].MergeCells = true;
-            exRange.Range["A1:F1"].Font.Bold = true;
-            exRange.Range["A1:F1"].Font.Italic = true;
-            exRange.Range["A1:F1"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignRight;
-            exRange.Range["A1:F1"].Value = "Bằng chữ: " + DataProvider.ChuyenSoSangChuoi((double)order.Total);
-            exRange = (Microsoft.Office.Interop.Excel.Range)exSheet.Cells[4, hang + 17];
-            exRange.Range["A1:C1"].MergeCells = true;
-            exRange.Range["A1:C1"].Font.Italic = true;
-            exRange.Range["A1:C1"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-            DateTime d = (DateTime)order.DateBuy;
-            exRange.Range["A1:C1"].Value = "Thủ Đức, ngày " + d.Day + " tháng " + d.Month + " năm " + d.Year;
-            exRange.Range["A2:C2"].MergeCells = true;
-            exRange.Range["A2:C2"].Font.Italic = true;
-            exRange.Range["A2:C2"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-            exRange.Range["A2:C2"].Value = "Nhân viên bán hàng";
-            exRange.Range["A6:C6"].MergeCells = true;
-            exRange.Range["A6:C6"].Font.Italic = true;
-            exRange.Range["A6:C6"].HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
-            exRange.Range["A6:C6"].Value = order.IdStaffNavigation.Name;
-            exSheet.Name = "Hóa đơn nhập";
-            exApp.Visible = true;
-
-        }
-
+       
         private void dgv_thongTinHoaDon_DoubleClick(object sender, EventArgs e)
         {
             string MaHangxoa;
@@ -597,6 +471,7 @@ namespace HRMAPP
                 txt_giamGia.Text = "0";
                 txt_thanhTien.Text = "0";
                 loadDataGridView();
+                SendDataToForm2(txt_maHD.Text);
             }
 
         }
@@ -604,9 +479,9 @@ namespace HRMAPP
         private void btn_boQua_Click(object sender, EventArgs e)
         {
             resetValues();
+            SendDataToForm2("Clean");
             dgv_thongTinHoaDon.DataSource = null;
             btn_huyHoaDon.Enabled = false;
-            btn_inHoaDon.Enabled = false;
             btn_luuHoaDon.Enabled = false;
             btn_themHoaDon.Enabled = true;
         }
@@ -620,20 +495,20 @@ namespace HRMAPP
         }
 
 
-      public static Assembly LoadOfficeInteropAssembly()
-    {
-        Assembly officeInteropAssembly = null;
-
-        try
+        public static Assembly LoadOfficeInteropAssembly()
         {
-            officeInteropAssembly = Assembly.Load("Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c");
-        }
-        catch (Exception ex)
-        {
-            // Handle the exception.
-        }
+            Assembly officeInteropAssembly = null;
 
-        return officeInteropAssembly;
+            try
+            {
+                officeInteropAssembly = Assembly.Load("Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c");
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception.
+            }
+
+            return officeInteropAssembly;
+        }
     }
-}
 }

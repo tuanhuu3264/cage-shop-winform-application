@@ -352,7 +352,7 @@
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Tìm kiếm";
-            groupBox2.Enter += groupBox2_Enter;
+
             // 
             // txt_timKiem
             // 
@@ -390,7 +390,7 @@
             Controls.Add(panel1);
             Name = "FRMHoaDonCuaKhachHang";
             Text = "FRMHoaDonCuaKhachHang";
-            Load += FRMHoaDonCuaKhachHang_Load;
+
             panel1.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();

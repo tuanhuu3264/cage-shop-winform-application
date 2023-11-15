@@ -9,21 +9,11 @@
       "HRMAPP/1.0.0": {
         "dependencies": {
           "BusinessObject": "1.0.0",
-          "ExcelLibrary": "1.2011.7.31",
           "HRMService": "1.0.0",
-          "Microsoft.Office.Interop.Excel": "12.0.4518.1014",
           "WinForms.DataVisualization": "1.9.1"
         },
         "runtime": {
           "HRMAPP.dll": {}
-        }
-      },
-      "ExcelLibrary/1.2011.7.31": {
-        "runtime": {
-          "lib/ExcelLibrary.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {},
@@ -377,14 +367,6 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
-      "Microsoft.Office.Interop.Excel/12.0.4518.1014": {
-        "runtime": {
-          "lib/net20/Microsoft.Office.Interop.Excel.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.4518.1014"
-          }
-        }
-      },
       "Microsoft.Win32.Registry/4.7.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
@@ -547,13 +529,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "ExcelLibrary/1.2011.7.31": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ogX1mzqe1Ek3Z0AdER4B4QBJoBkt90Mfe0LnyiPg/uP+iZ7rx+9fFXbsZjOlPsS0xNn8sFeesvNnfEnuthudrQ==",
-      "path": "excellibrary/1.2011.7.31",
-      "hashPath": "excellibrary.1.2011.7.31.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -764,13 +739,6 @@
       "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "path": "microsoft.netcore.platforms/3.1.0",
       "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
-    },
-    "Microsoft.Office.Interop.Excel/12.0.4518.1014": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-d1Cl9PoL5h0WLinxwJ68ZZ26P+6vjCIN0UMqPCEVKe3v/CQLxH4Ij/Fy4in4LK2bYZlzE2bx7j8xSQ6YqK1Vpw==",
-      "path": "microsoft.office.interop.excel/12.0.4518.1014",
-      "hashPath": "microsoft.office.interop.excel.12.0.4518.1014.nupkg.sha512"
     },
     "Microsoft.Win32.Registry/4.7.0": {
       "type": "package",

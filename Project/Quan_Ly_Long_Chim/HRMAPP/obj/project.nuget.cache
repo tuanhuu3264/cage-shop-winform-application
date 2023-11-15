@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "64mRHOJ4b58Wbu0gvqcEQfkAbAJKfRN7hl/TuU5OOnGXGF/sg3vtxmTYACybBPsxBgo6LytS/fK7GBUxrUOGwQ==",
+  "dgSpecHash": "F9+Bmgv7KdjuaOW87ynCLvq25RR0tGpd568hWxY+p1TA3SKDZoVaGY619Y1KrRTnX5kS6LkygVEH6G6GvEzqVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\BIN\\Desktop\\Lab_2_Prn\\NewProject\\cage-shop-winform-application\\Project\\Quan_Ly_Long_Chim\\HRMAPP\\HRMAPP.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,6 @@
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.8.0\\microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\BIN\\.nuget\\packages\\microsoft.office.interop.excel\\12.0.4518.1014\\microsoft.office.interop.excel.12.0.4518.1014.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
@@ -55,16 +54,5 @@
     "C:\\Users\\BIN\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\BIN\\.nuget\\packages\\winforms.datavisualization\\1.9.1\\winforms.datavisualization.1.9.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Office.Interop.Excel 12.0.4518.1014' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Office.Interop.Excel",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

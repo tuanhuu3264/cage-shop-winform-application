@@ -38,14 +38,14 @@
             // 
             // txt_Email
             // 
-            txt_Email.Location = new Point(157, 96);
+            txt_Email.Location = new Point(178, 93);
             txt_Email.Name = "txt_Email";
             txt_Email.Size = new Size(179, 27);
             txt_Email.TabIndex = 0;
             // 
             // txt_Password
             // 
-            txt_Password.Location = new Point(157, 129);
+            txt_Password.Location = new Point(178, 126);
             txt_Password.Name = "txt_Password";
             txt_Password.Size = new Size(179, 27);
             txt_Password.TabIndex = 1;
@@ -55,7 +55,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Highlight;
-            label1.Location = new Point(88, 99);
+            label1.Location = new Point(109, 96);
             label1.Name = "label1";
             label1.Size = new Size(47, 20);
             label1.TabIndex = 2;
@@ -66,7 +66,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.Highlight;
-            label3.Location = new Point(64, 132);
+            label3.Location = new Point(85, 129);
             label3.Name = "label3";
             label3.Size = new Size(76, 20);
             label3.TabIndex = 4;
@@ -77,7 +77,7 @@
             bttn_Login.BackColor = SystemColors.Highlight;
             bttn_Login.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             bttn_Login.ForeColor = SystemColors.HighlightText;
-            bttn_Login.Location = new Point(157, 173);
+            bttn_Login.Location = new Point(178, 170);
             bttn_Login.Name = "bttn_Login";
             bttn_Login.Size = new Size(94, 29);
             bttn_Login.TabIndex = 5;
@@ -90,7 +90,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.Highlight;
-            label2.Location = new Point(179, 22);
+            label2.Location = new Point(178, 28);
             label2.Name = "label2";
             label2.Size = new Size(97, 41);
             label2.TabIndex = 6;
@@ -108,6 +108,7 @@
             Controls.Add(txt_Password);
             Controls.Add(txt_Email);
             Name = "FRMLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FRMLogin";
             ResumeLayout(false);
             PerformLayout();

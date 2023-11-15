@@ -293,7 +293,7 @@ namespace HRMAPP
             List<Product> productDTOs = new List<Product>();
             if ((txt_tenHang.Text == "") && (cbo_maChatLieu.Text == ""))
             {
-                productDTOs = productServices.listProducts();
+                productDTOs = (List<Product>)productServices.listProducts();
             }
             if (txt_tenHang.Text != "")
             {
@@ -301,7 +301,7 @@ namespace HRMAPP
             }
             if (cbo_maChatLieu.Text != "")
             {
-                productDTOs = productServices.listProducts().Where(p => p.IdTypeProduct.Contains(txt_tenHang.Text)).ToList();
+                productDTOs = productServices.listProducts().Where(p => p.IdTypeProduct.Contains(cbo_maChatLieu.Text)).ToList();
             }
             dgv_hang.DataSource = productDTOs;
             if (dgv_hang.Rows.Count == 0)
@@ -352,7 +352,7 @@ namespace HRMAPP
                 txt_donGia.Text = dgv_hang.Rows[index].Cells["PriceImport"].Value.ToString();
                 txt_donBan.Text = dgv_hang.Rows[index].Cells["PriceExport"].Value.ToString(); ;
                 txt_anh.Text = dgv_hang.Rows[index].Cells["ImageUrl"].Value.ToString(); ;
-                /*picture_hang.Image = Image.FromFile(txt_anh.Text);*/
+                picture_hang.Image = Image.FromFile(txt_anh.Text);
                 txt_tenChatLieu.Text = typeProductServices.listTypeProduct().Where(t => t.Id == cbo_maChatLieu.Text).Select(t => t.Name).FirstOrDefault();
                 txt_ghiChu.Text = dgv_hang.Rows[index].Cells["Description"].Value.ToString(); ;
             }

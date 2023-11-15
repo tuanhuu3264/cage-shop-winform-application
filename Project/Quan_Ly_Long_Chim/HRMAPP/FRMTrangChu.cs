@@ -6,11 +6,14 @@ namespace HRMAPP
     public partial class FRMTrangChu : Form
     {
         staff account;
+        FRMHoaDonCuaKhachHang frm=null;
         public FRMTrangChu(staff account)
         {
             InitializeComponent();
             this.IsMdiContainer = true;
             this.account = account;
+            frm = new FRMHoaDonCuaKhachHang();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -64,7 +67,17 @@ namespace HRMAPP
 
         private void hóaĐơnBánToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             FRMHoaDonBanHang frmHoaDon = new FRMHoaDonBanHang();
+            if ((frm != null && frm.IsDisposed) || frm==null)
+            {
+
+                frm = new FRMHoaDonCuaKhachHang();
+            }
+            frm.AddDatePassed(frmHoaDon);
+            frm.Show();
+
+            frm.Show();
             frmHoaDon.MdiParent = this;
             frmHoaDon.Show();
         }

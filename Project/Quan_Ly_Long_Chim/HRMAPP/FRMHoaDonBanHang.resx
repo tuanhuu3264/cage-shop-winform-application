@@ -121,7 +121,7 @@
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAABBBJREFUeF7tm9tPE0EUxtF/DYxJqzGmjdH4R/jmiw9NfPBFE9EEjQ8g3kCj8VGD
+        EAAACxABrSO9dQAABBBJREFUeF7tm9tPE0EUxtF/DYxJqzGmjdH4R/jmiw9NfPBFE9EEjQ8g3kCj8VGD
         IN5IUPEOAjaEm4AExCL30pZxTz27/XY72zaH7nY32V9yQunMfPN96+zO7kaaIiIiIiIi3GmJJS60xBPb
         9JO/KvL/+2TOKBXQyjk9i2iOJbIkeOjoiULf55lesw4fO5l3TBi4Iu8cQw4KdvQMW3Um1UoHxTZhEItj
         yEExPABBLvTMMeSgmG6yIBZ65hhyUEw3WRALPXMMOSimmyyIhZ45hhwU000WxELPHEMOiukmC2KhZ44h
@@ -260,21 +260,6 @@
         lazRAgnh0yA52YC9Ss5wMRTLJCM78B4KTrziFxgfIeus6mr1CMmww6C5K9a4hcZBCJvXuTV3A1CTt4DM
         JJZze/McsFcJC+WfnZT8br1hTeH3TZVcwQOGFZOCAxtiCdM2mS8OeDqCgCbQrHYKEedgeZD6hB0HsMjC
         phP2bbBmx4sH3uxA5A5ycMsTH+nZLFaVB+LfrFNM8d+jVPoLcAskwuD1MJEAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btn_inHoaDon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAh5JREFUaEPtmc1qU1EUhfMaPkCI8TXaYm9N0OjAQYdOY0f9SYfN2IETRYUOKg58
-        ho4KIr5BixRszF9/oY+wzSnryO3J2qT03n09tfeDjwxy11nrkkBIUikpKblHtI7lybOxDCeKhU/HMpg8
-        JqjLHxTQ8hztoy5/SJmJqMsfVmYh6vKHlVmIupxY2/9eWT8QJyuz0PdNur9hRQb8Yf/iBpyZSR3GyixM
-        d2JFBlKHsTIL051YkYHUYazMwnQnVtyclU53qd3pDl53uhKTblN7fWv2p3SM4/+6sTX7U5oGIxIzdVgo
-        JjFTh4ViEjN1WKhI321/kaPhSA57fXnzfnvqeczUCQNFurLZleHpuSz/uJSXexfy81dv6hrM1AkDRepu
-        YHR2cTX+xe6pHB71p67BTJ0wULQfPn+V4cmZ/B4dy9uPO1PPY6ZOGIhNzNRhoZjETB0WiknM1GGhmMRM
-        HRaKSczUYaGYxEydMPC40ZJarSbValUefOoVoutyna473IOZOmHgYb1+dWDRN+Cs1x9d2+LETJ0wkH4F
-        2LcnC12X61xsPr+2xYmZOmEgLSuzkHV7MVOHhbyszELW7cVMHRbysjILWbcXM3VYyMvKLGTdXszUedVe
-        FU1WZiHr9mKmznzSHCwkTWGyMgtZt3M+acz+VWIhaSTuQnYAK7OQdbtNc0vNRcy8HazMQtTlz//wF1Ni
-        fBP91liyvU1KSkruEpXKH2kQdKEo2rsVAAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="sqlCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

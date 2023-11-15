@@ -37,7 +37,7 @@ namespace HRMAPP
             cbo_maNhanVien.DataSource = staffServices.listStaffs();
             cbo_maNhanVien.DisplayMember = "id";
             cbo_maNhanVien.SelectedIndex = -1;
-            txt_tongTien.Enabled = false;
+
         }
         private void resetValues()
         {
@@ -46,7 +46,7 @@ namespace HRMAPP
             cbo_maNhanVien.Text = "";
             txt_nam.Text = "";
             txt_thang.Text = "";
-            txt_tongTien.Text = "0";
+
             cbo_maHoaDon.Focus();
         }
         private void loadDataGridView()
@@ -67,81 +67,95 @@ namespace HRMAPP
 
         private void btn_timKiemHoaDon_Click(object sender, EventArgs e)
         {
-            if ((cbo_maHoaDon.Text == "") && (txt_thang.Text == "") && (txt_nam.Text == "") && (cbo_maNhanVien.Text == "") && (cbo_maKhachHang.Text == "") && (txt_tongTien.Text == ""))
+            // Input Validation
+            if (string.IsNullOrWhiteSpace(cbo_maHoaDon.Text) && string.IsNullOrWhiteSpace(txt_thang.Text) &&
+                string.IsNullOrWhiteSpace(txt_nam.Text) && string.IsNullOrWhiteSpace(cbo_maNhanVien.Text) &&
+                string.IsNullOrWhiteSpace(cbo_maKhachHang.Text))
             {
-                MessageBox.Show("Hãy nhập một điều kiện để tìm kiếm!!!", "Yêu cầu...", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Hãy nhập ít nhất một điều kiện để tìm kiếm!!!", "Yêu cầu...", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (cbo_maHoaDon.Text != "")
+
+            // Fetching Initial Data
+            IEnumerable<Order> orders = orderServices.listOrders();
+
+            // Filtering based on Search Criteria
+            if (!string.IsNullOrWhiteSpace(cbo_maHoaDon.Text))
             {
-                dgv_hoaDon.DataSource = orderServices.listOrders().Where(o => o.Id == cbo_maHoaDon.Text).Select(o => new
-                {
-                    o.Id,
-                    o.IdStaff,
-                    o.DateBuy,
-                    o.IdCustomer,
-                    o.Total,
-                }).ToList();
-            }
-            if (txt_thang.Text != "")
-            {
-                dgv_hoaDon.DataSource = orderServices.listOrders().Where(o => o.DateBuy.Value.Month == int.Parse(txt_thang.Text)).Select(o => new
-                {
-                    o.Id,
-                    o.IdStaff,
-                    o.DateBuy,
-                    o.IdCustomer,
-                    o.Total,
-                }).ToList();
-            }
-            if (txt_nam.Text != "")
-            {
-                dgv_hoaDon.DataSource = orderServices.listOrders().Where(o => o.DateBuy.Value.Year == int.Parse(txt_nam.Text)).Select(o => new
-                {
-                    o.Id,
-                    o.IdStaff,
-                    o.DateBuy,
-                    o.IdCustomer,
-                    o.Total,
-                }).ToList();
-            }
-            if (cbo_maNhanVien.Text != "")
-            {
-                dgv_hoaDon.DataSource = orderServices.listOrders().Where(o => o.IdStaff == cbo_maNhanVien.Text).Select(o => new
-                {
-                    o.Id,
-                    o.IdStaff,
-                    o.DateBuy,
-                    o.IdCustomer,
-                    o.Total,
-                }).ToList();
-            }
-            if (cbo_maKhachHang.Text != "")
-            {
-                dgv_hoaDon.DataSource = orderServices.listOrders().Where(o => o.IdCustomer == cbo_maKhachHang.Text).Select(o => new
-                {
-                    o.Id,
-                    o.IdStaff,
-                    o.DateBuy,
-                    o.IdCustomer,
-                    o.Total,
-                }).ToList();
+                orders = orders.Where(o => o.Id == cbo_maHoaDon.Text.Trim());
             }
 
-            if (dgv_hoaDon.Rows.Count == 0)
+            if (!string.IsNullOrWhiteSpace(txt_thang.Text))
             {
-                MessageBox.Show("Không có hóa đơn nào được tìm thấy !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (int.TryParse(txt_thang.Text, out int month))
+                {
+                    if (month < 1 || month > 12)
+                    {
+                        MessageBox.Show("Tháng không phù hợp. Vui lòng nhập lại");
+                        return;
+                    }
+                    orders = orders.Where(o => o.DateBuy.Value.Month == month);
+                }
+                else
+                {
+                    MessageBox.Show("Tháng không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(txt_nam.Text))
+            {
+                if (int.TryParse(txt_nam.Text, out int year))
+                {
+                    if (year < 0)
+                    {
+                        MessageBox.Show("Năm không phù hợp. Vui lòng nhập lại");
+                        return;
+                    }
+                    orders = orders.Where(o => o.DateBuy.Value.Year == year);
+                }
+                else
+                {
+                    MessageBox.Show("Năm không hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(cbo_maNhanVien.Text))
+            {
+                orders = orders.Where(o => o.IdStaff == cbo_maNhanVien.Text.Trim());
+            }
+
+            if (!string.IsNullOrWhiteSpace(cbo_maKhachHang.Text))
+            {
+                orders = orders.Where(o => o.IdCustomer == cbo_maKhachHang.Text.Trim());
+            }
+
+            // Binding the Filtered Data to DataGridView
+            BindingSource newS = new BindingSource();
+            newS.DataSource = orders.Select(m => new
+            {
+                m.Id,
+                m.DateBuy,
+                m.Total,
+                m.IdCustomer,
+                m.IdStaff
+            });
+            dgv_hoaDon.DataSource = newS;
+
+            // Displaying Messages based on Search Results
+            if (!orders.Any())
+            {
+                MessageBox.Show("Không có hóa đơn nào được tìm thấy!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 resetValues();
             }
             else
             {
-
-                MessageBox.Show("Có " + dgv_hoaDon.Rows.Count + " hóa đơn được tìm thấy!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                loadDataGridView();
+                MessageBox.Show($"Có {orders.Count()} hóa đơn được tìm thấy!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 resetValues();
-
             }
+
+
         }
 
         private void btn_dong_Click(object sender, EventArgs e)
@@ -160,6 +174,20 @@ namespace HRMAPP
         private void dgv_hoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void txt_thang_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (((e.KeyChar >= '0') && (e.KeyChar <= '9')) || (Convert.ToInt32(e.KeyChar) == 8))
+                e.Handled = false;
+            else e.Handled = true;
+        }
+
+        private void txt_nam_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (((e.KeyChar >= '0') && (e.KeyChar <= '9')) || (Convert.ToInt32(e.KeyChar) == 8))
+                e.Handled = false;
+            else e.Handled = true;
         }
     }
 }

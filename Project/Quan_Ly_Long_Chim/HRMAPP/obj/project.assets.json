@@ -524,15 +524,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Office.Interop.Excel/12.0.4518.1014": {
-        "type": "package",
-        "compile": {
-          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
-        },
-        "runtime": {
-          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
-        }
-      },
       "Microsoft.Win32.Registry/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -1713,18 +1704,6 @@
         "version.txt"
       ]
     },
-    "Microsoft.Office.Interop.Excel/12.0.4518.1014": {
-      "sha512": "d1Cl9PoL5h0WLinxwJ68ZZ26P+6vjCIN0UMqPCEVKe3v/CQLxH4Ij/Fy4in4LK2bYZlzE2bx7j8xSQ6YqK1Vpw==",
-      "type": "package",
-      "path": "microsoft.office.interop.excel/12.0.4518.1014",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net20/Microsoft.Office.Interop.Excel.dll",
-        "microsoft.office.interop.excel.12.0.4518.1014.nupkg.sha512",
-        "microsoft.office.interop.excel.nuspec"
-      ]
-    },
     "Microsoft.Win32.Registry/4.7.0": {
       "sha512": "KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "type": "package",
@@ -2428,7 +2407,6 @@
     "net6.0-windows7.0": [
       "BusinessObject >= 1.0.0",
       "HRMService >= 1.0.0",
-      "Microsoft.Office.Interop.Excel >= 12.0.4518.1014",
       "WinForms.DataVisualization >= 1.9.1"
     ]
   },
@@ -2478,10 +2456,6 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "Microsoft.Office.Interop.Excel": {
-            "target": "Package",
-            "version": "[12.0.4518.1014, )"
-          },
           "WinForms.DataVisualization": {
             "target": "Package",
             "version": "[1.9.1, )"
@@ -2509,17 +2483,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Office.Interop.Excel 12.0.4518.1014' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Office.Interop.Excel",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

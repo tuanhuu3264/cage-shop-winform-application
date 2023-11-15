@@ -9,7 +9,7 @@ namespace HRMService
 {
     public interface IProductServices
     {
-        List<Product> listProducts();
+      IEnumerable<Product> listProducts();
         Product GetProduct(string id);
         bool checkID(string id);
         void insertProduct(Product product);
